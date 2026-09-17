@@ -1,0 +1,29 @@
+{
+  "name": "dsh-package-learn",
+  "version": "0.1.0",
+  "private": true,
+  "description": "芯片封装学习 · dsh web 插件（常驻版）：左侧栏入口 + 学习界面",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

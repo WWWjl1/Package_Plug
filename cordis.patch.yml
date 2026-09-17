@@ -1,0 +1,11 @@
+# dsh-package-learn 的挂载补丁
+#
+# 这一行把这个插件插进 dsh 的插件树。profile 启动时会合并本文件。
+#
+# 想改课程文件夹位置时，取消下面 config.root 的注释并填绝对路径；
+# 不填时插件会自动定位到「本包所在目录」，也就是这个仓库的根目录。
+- insert:
+    - id: package-learn
+      name: 'dsh-package-learn'
+      # config:
+      #   root: 'D:\Dsh_WorkSpace\Package_Learn_Plug_In'
