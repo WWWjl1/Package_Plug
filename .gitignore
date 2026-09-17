@@ -1,0 +1,19 @@
+# 忽略个人学习进度
+#
+# 设计意图：progress/ 文件夹本身要进仓库（别人下载后进度就存这里），
+# 但里面由插件运行时生成的具体数据是本机私有的，不上传。
+# 第一次打开学习界面时插件会自己创建这些文件，所以新克隆的仓库不需要它们。
+
+progress/state.json
+progress/quiz.json
+progress/session.json
+progress/ui.json
+
+# 系统与编辑器杂物
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*.log
+.idea/
+.vscode/
