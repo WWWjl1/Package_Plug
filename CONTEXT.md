@@ -63,6 +63,9 @@ Package_Learn_Plug_In/
 │  └─ topics/            ← 5 个：封装形式/材料/设备/可靠性/术语
 ├─ knowledge/points.json ← 114 个知识点 id 的登记表（自检会核对）
 ├─ assets/               ← 19 张 SVG（内联进界面；导出的 Markdown 会转成 data URI）
+├─ docs/                 ← README 里的两张界面截图（ui-overview.png / ui-topbar.png）
+│                          截图是从整屏里裁出来的：**左侧栏（工作区列表、余额）与右侧文件面板
+│                          都裁掉了**，别把带私人信息的截图直接丢进仓库
 ├─ tools/                ← 验收脚本（不属于运行路径，删掉不影响插件）
 │  ├─ check-all.mjs      ← 一条命令跑完
 │  ├─ check-content.mjs  ← 内容结构 / 字段 / 小测数 / 配图
