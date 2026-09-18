@@ -1,8 +1,8 @@
 {
   "name": "dsh-package-learn",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
-  "description": "芯片封装学习 · dsh web 插件（常驻版）：左侧栏入口 + 学习界面。19 模块 / 114 知识点 / 450 题",
+  "description": "芯片封装学习 · dsh web 插件（常驻版）：左侧栏入口 + 学习界面 + 今日复习。19 模块 / 114 知识点 / 450 题",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
