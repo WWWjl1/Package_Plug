@@ -67,37 +67,37 @@
           "id": "bumping",
           "title": "Bumping 凸点",
           "file": "advanced/01-bumping.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "wlcsp",
           "title": "WLCSP",
           "file": "advanced/02-wlcsp.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "fan-out",
           "title": "Fan-out 扇出",
           "file": "advanced/03-fan-out.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "tsv",
           "title": "TSV 硅通孔",
           "file": "advanced/04-tsv.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "stacking",
           "title": "2.5D / 3D 堆叠",
           "file": "advanced/05-stacking.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "chiplet",
           "title": "Chiplet 芯粒",
           "file": "advanced/06-chiplet.json",
-          "status": "planned"
+          "status": "ready"
         }
       ]
     },

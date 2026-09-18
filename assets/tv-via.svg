@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="TSV 剖面结构与 Bosch 侧壁扇贝纹示意">
+  <defs>
+    <linearGradient id="siG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <linearGradient id="cuG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8b06a"/>
+      <stop offset="1" stop-color="#b0742a"/>
+    </linearGradient>
+    <marker id="tvA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">① TSV 剖面（via-middle 典型：孔径 10 μm × 深 100 μm，AR = 10）</text>
+  <text x="470" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">② Bosch 侧壁扇贝纹（放大）</text>
+
+  <!-- ===== ① 剖面 ===== -->
+  <text x="40" y="80" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">正面器件与 BEOL 层（TSV 自正面开口）</text>
+  <rect x="40" y="86" width="240" height="12" fill="#cbd6e6" stroke="#93a1b5" stroke-width="1"/>
+
+  <!-- 硅本体 -->
+  <rect x="40" y="98" width="240" height="152" fill="url(#siG)" stroke="#4a5666" stroke-width="1.5"/>
+  <text x="54" y="128" font-family="system-ui,sans-serif" font-size="13" fill="#e8eff8">硅（Si）</text>
+
+  <!-- 深孔（刻蚀后） -->
+  <path d="M130,98 L133,250 L167,250 L170,98 Z" fill="#232c3a"/>
+
+  <!-- 绝缘层 SiO2 -->
+  <path d="M130,98 L133,250" fill="none" stroke="#7fd4c1" stroke-width="5"/>
+  <path d="M170,98 L167,250" fill="none" stroke="#7fd4c1" stroke-width="5"/>
+
+  <!-- 阻挡层 / 种子层 -->
+  <path d="M135.5,98 L138.5,250" fill="none" stroke="#d9a441" stroke-width="2"/>
+  <path d="M164.5,98 L161.5,250" fill="none" stroke="#d9a441" stroke-width="2"/>
+
+  <!-- 电镀铜填充 -->
+  <path d="M140,99 L142,250 L158,250 L160,99 Z" fill="url(#cuG)" stroke="#8a5a20" stroke-width="0.8"/>
+
+  <!-- 露头区（背面硅被刻蚀掉） -->
+  <rect x="100" y="250" width="100" height="32" fill="#f2f6fb" stroke="#c3cdda" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- 露头后的铜柱（穿透背面钝化，接 RDL） -->
+  <path d="M142,250 L142,282 L158,282 L158,250 Z" fill="url(#cuG)" stroke="#7fd4c1" stroke-width="2.5"/>
+
+  <!-- 背面钝化层 -->
+  <rect x="40" y="272" width="102" height="10" fill="#b9c6d6" stroke="#93a1b5" stroke-width="1"/>
+  <rect x="158" y="272" width="122" height="10" fill="#b9c6d6" stroke="#93a1b5" stroke-width="1"/>
+
+  <!-- 背面 RDL / 凸点 -->
+  <rect x="110" y="282" width="80" height="10" fill="#d9a441" stroke="#8d6f14" stroke-width="1"/>
+
+  <!-- 露头高度标注 -->
+  <line x1="196" y1="250" x2="196" y2="272" stroke="#e06c6c" stroke-width="1.3"/>
+  <line x1="192" y1="250" x2="200" y2="250" stroke="#e06c6c" stroke-width="1.3"/>
+  <line x1="192" y1="272" x2="200" y2="272" stroke="#e06c6c" stroke-width="1.3"/>
+  <text x="204" y="266" font-family="system-ui,sans-serif" font-size="11.5" fill="#e06c6c">露头 1～3 μm</text>
+
+  <!-- 右侧引线标注 -->
+  <line x1="240" y1="118" x2="288" y2="108" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tvA)"/>
+  <text x="294" y="106" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">硅本体（衬底）</text>
+
+  <line x1="172" y1="150" x2="288" y2="142" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tvA)"/>
+  <text x="294" y="140" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">绝缘层 SiO2</text>
+
+  <line x1="166" y1="186" x2="288" y2="178" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tvA)"/>
+  <text x="294" y="176" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">阻挡层 + Cu 种子层</text>
+
+  <line x1="150" y1="222" x2="288" y2="214" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tvA)"/>
+  <text x="294" y="212" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">电镀铜填充（自下而上）</text>
+
+  <line x1="162" y1="258" x2="288" y2="248" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tvA)"/>
+  <text x="294" y="246" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">露头面 via reveal</text>
+
+  <line x1="240" y1="286" x2="288" y2="292" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tvA)"/>
+  <text x="294" y="292" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">背面钝化层 / RDL</text>
+
+  <!-- ===== ② 扇贝纹放大 ===== -->
+  <path d="M520,70 Q514,80 520,90 Q514,100 520,110 Q514,120 520,130 Q514,140 520,150 Q514,160 520,170 Q514,180 520,190 Q514,200 520,210 Q514,220 520,230 Q514,240 520,250 Q514,260 520,270 L468,270 L468,70 Z" fill="url(#cuG)"/>
+  <path d="M520,70 Q514,80 520,90 Q514,100 520,110 Q514,120 520,130 Q514,140 520,150 Q514,160 520,170 Q514,180 520,190 Q514,200 520,210 Q514,220 520,230 Q514,240 520,250 Q514,260 520,270 L748,270 L748,70 Z" fill="url(#siG)" stroke="#4a5666" stroke-width="1.5"/>
+  <path d="M520,70 Q514,80 520,90 Q514,100 520,110 Q514,120 520,130 Q514,140 520,150 Q514,160 520,170 Q514,180 520,190 Q514,200 520,210 Q514,220 520,230 Q514,240 520,250 Q514,260 520,270" fill="none" stroke="#7fd4c1" stroke-width="4"/>
+  <path d="M520,70 Q514,80 520,90 Q514,100 520,110 Q514,120 520,130 Q514,140 520,150 Q514,160 520,170 Q514,180 520,190 Q514,200 520,210 Q514,220 520,230 Q514,240 520,250 Q514,260 520,270" fill="none" stroke="#d9a441" stroke-width="2" transform="translate(-5,0)"/>
+
+  <text x="470" y="62" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">电镀铜</text>
+
+  <text x="660" y="120" font-family="system-ui,sans-serif" font-size="13" fill="#e8eff8">硅（Si）</text>
+
+  <line x1="517" y1="110" x2="600" y2="88" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tvA)"/>
+  <text x="606" y="84" font-family="system-ui,sans-serif" font-size="12" fill="#dbe6f4">扇贝幅度 50～200 nm</text>
+
+  <line x1="516" y1="176" x2="600" y2="160" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tvA)"/>
+  <text x="606" y="158" font-family="system-ui,sans-serif" font-size="12" fill="#dbe6f4">绝缘层凹角处最薄</text>
+
+  <text x="560" y="216" font-family="system-ui,sans-serif" font-size="12" fill="#dbe6f4">每轮：SF6 刻蚀（各向同性）</text>
+  <text x="560" y="234" font-family="system-ui,sans-serif" font-size="12" fill="#dbe6f4">→ C4F8 钝化 → 循环</text>
+  <text x="560" y="256" font-family="system-ui,sans-serif" font-size="12" fill="#dbe6f4">100 μm 深 ≈ 100 个循环</text>
+
+  <text x="24" y="312" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">注：层厚未按比例。AR = 孔深 / 孔径，本例 100 μm / 10 μm = 10，已贴着电镀可靠填充的上限；虚线为理想垂直壁。</text>
+  <text x="24" y="328" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">扇贝纹使孔内绝缘层最薄处只有平面区域的 60%～70%，这是漏电的主要形貌根源，也是电镀易在凹坑处先行封口的原因。</text>
+</svg>

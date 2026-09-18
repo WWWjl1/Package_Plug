@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="Fan-out 塑封重构与 die shift 对准余量示意">
+  <defs>
+    <linearGradient id="foSiG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <linearGradient id="foEmcG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a6577"/>
+      <stop offset="1" stop-color="#333b47"/>
+    </linearGradient>
+    <marker id="foAg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+    <marker id="foAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e06c6c"/>
+    </marker>
+  </defs>
+
+  <text x="20" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">① 塑封重构（Reconstitution）</text>
+  <text x="430" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">② die shift 吃掉 RDL 对准余量（放大示意）</text>
+
+  <line x1="418" y1="38" x2="418" y2="300" stroke="#dde3ec" stroke-width="1"/>
+
+  <text x="20" y="50" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#8b97a8">① KGD 贴到载板</text>
+  <rect x="24" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#4a5666" stroke-width="1"/>
+  <rect x="50" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#4a5666" stroke-width="1"/>
+  <rect x="76" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#4a5666" stroke-width="1"/>
+  <rect x="102" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#4a5666" stroke-width="1"/>
+  <rect x="20" y="72" width="110" height="9" fill="#cbd6e6" stroke="#8b97a8" stroke-width="1"/>
+  <text x="20" y="96" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">芯片自由站在胶上</text>
+
+  <line x1="136" y1="64" x2="146" y2="64" stroke="#9aa7b8" stroke-width="1.4" marker-end="url(#foAg)"/>
+
+  <text x="148" y="50" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#8b97a8">② 压缩塑封 + 磨平</text>
+  <rect x="148" y="52" width="124" height="29" rx="3" fill="url(#foEmcG)" stroke="#242a33" stroke-width="1"/>
+  <rect x="152" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#1f2530" stroke-width="1"/>
+  <rect x="178" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#1f2530" stroke-width="1"/>
+  <rect x="204" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#1f2530" stroke-width="1"/>
+  <rect x="230" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#1f2530" stroke-width="1"/>
+  <text x="148" y="96" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">低流速，防芯片被推走</text>
+
+  <line x1="278" y1="64" x2="288" y2="64" stroke="#9aa7b8" stroke-width="1.4" marker-end="url(#foAg)"/>
+
+  <text x="290" y="50" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#8b97a8">③ 解键合 + RDL</text>
+  <rect x="290" y="52" width="124" height="29" rx="3" fill="url(#foEmcG)" stroke="#242a33" stroke-width="1"/>
+  <rect x="294" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#1f2530" stroke-width="1"/>
+  <rect x="320" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#1f2530" stroke-width="1"/>
+  <rect x="346" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#1f2530" stroke-width="1"/>
+  <rect x="372" y="56" width="20" height="16" fill="url(#foSiG)" stroke="#1f2530" stroke-width="1"/>
+  <rect x="290" y="81" width="124" height="11" fill="#c9a227" stroke="#8d6f14" stroke-width="1"/>
+  <circle cx="306" cy="102" r="5" fill="#b9c3d2" stroke="#7d8798" stroke-width="1"/>
+  <circle cx="336" cy="102" r="5" fill="#b9c3d2" stroke="#7d8798" stroke-width="1"/>
+  <circle cx="366" cy="102" r="5" fill="#b9c3d2" stroke="#7d8798" stroke-width="1"/>
+  <circle cx="396" cy="102" r="5" fill="#b9c3d2" stroke="#7d8798" stroke-width="1"/>
+  <text x="290" y="124" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">RDL 直接踩在磨平的模面上</text>
+
+  <text x="20" y="152" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">为什么必须先测再重构（KGD）：芯片一旦被塑封料埋住就拿不出来，</text>
+  <text x="20" y="170" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">一颗坏芯片会永久占住载板面积，并带走它上面全部 RDL 的成本。</text>
+  <text x="20" y="196" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">为什么不能用传递注塑：熔体流速高约两个数量级，拖曳力（∝v²）</text>
+  <text x="20" y="214" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">高约四个数量级，芯片被推着走 —— 这就是 die shift 的起点。</text>
+  <text x="20" y="240" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">为什么后道设备用得起：重构把散芯片还原成一片圆形工件，</text>
+  <text x="20" y="258" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">才能用晶圆级的光刻、电镀、PVD 设备，把成本摊薄。</text>
+
+  <text x="452" y="46" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">die pad 40 × 40 μm</text>
+  <rect x="452" y="52" width="92" height="92" fill="#dfe5ee" stroke="#8b97a8" stroke-width="1.2"/>
+  <circle cx="498" cy="98" r="21" fill="none" stroke="#4a8fd0" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <circle cx="514" cy="112" r="21" fill="none" stroke="#e06c6c" stroke-width="1.8"/>
+  <line x1="498" y1="98" x2="510" y2="108" stroke="#e06c6c" stroke-width="1.6" marker-end="url(#foAr)"/>
+  <text x="552" y="94" font-family="system-ui,sans-serif" font-size="11.5" fill="#4a8fd0">理想位置（虚线）</text>
+  <text x="552" y="112" font-family="system-ui,sans-serif" font-size="11.5" fill="#e06c6c">实际位置（实线）</text>
+  <text x="552" y="134" font-family="system-ui,sans-serif" font-size="11.5" fill="#e06c6c">die shift ≈ 8 μm</text>
+
+  <text x="430" y="172" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">余量 Δ ≤ (W_pad − D_via) / 2 = (40 − 20)/2 = 10 μm</text>
+  <text x="430" y="190" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">实际误差相加 6+4+1+2 = 13 μm &gt; 10 μm，超预算</text>
+  <text x="430" y="208" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">每多 1 μm 偏移，需把连接窗缩 2 μm 或 pad 放大 2 μm</text>
+  <text x="430" y="236" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">旋转比平移更毒：δ = r · θ</text>
+  <text x="430" y="254" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">10 mm 芯片角上 r = 7.07 mm，θ = 0.1° → δ ≈ 12 μm</text>
+  <text x="430" y="282" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">对策：压缩注塑降流速、提高贴片胶固定力、自适应布线</text>
+</svg>

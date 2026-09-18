@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="良率与面积的关系，以及单片与芯粒的面积拆分对比">
+  <defs>
+    <linearGradient id="clDieG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+  </defs>
+
+  <text x="20" y="24" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">良率与面积：为什么要把大芯片拆开</text>
+
+  <text x="24" y="50" font-family="system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#8b97a8">① 良率随面积指数下降（泊松模型）</text>
+
+  <!-- 坐标轴 -->
+  <line x1="60" y1="40" x2="60" y2="250" stroke="#c3ccda" stroke-width="1.2"/>
+  <line x1="60" y1="250" x2="420" y2="250" stroke="#c3ccda" stroke-width="1.2"/>
+  <line x1="60" y1="145" x2="420" y2="145" stroke="#e3e8f0" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="60" y1="40" x2="420" y2="40" stroke="#e3e8f0" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <text x="54" y="44" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8" text-anchor="end">100%</text>
+  <text x="54" y="149" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8" text-anchor="end">50%</text>
+  <text x="54" y="254" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8" text-anchor="end">0</text>
+  <text x="36" y="145" transform="rotate(-90 36 145)" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8" text-anchor="middle">良率</text>
+
+  <text x="60" y="266" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8" text-anchor="middle">0</text>
+  <text x="220" y="266" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8" text-anchor="middle">400</text>
+  <text x="380" y="266" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8" text-anchor="middle">800</text>
+  <text x="240" y="284" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8" text-anchor="middle">芯片面积（mm²）</text>
+
+  <!-- 曲线：D0 = 0.1 -->
+  <path d="M60,40 L100,60 L140,78 L180,94 L220,109 L260,123 L300,135 L340,146 L380,156 L420,165"
+        fill="none" stroke="#4a8fd0" stroke-width="2.2"/>
+  <!-- 曲线：D0 = 0.2 -->
+  <path d="M60,40 L100,78 L140,109 L180,135 L220,156 L260,173 L300,187 L340,198 L380,208 L420,215"
+        fill="none" stroke="#e06c6c" stroke-width="2.2" stroke-dasharray="6 4"/>
+
+  <!-- 关键点标注 -->
+  <line x1="100" y1="60" x2="100" y2="250" stroke="#4a8fd0" stroke-width="1" stroke-dasharray="3 4"/>
+  <circle cx="100" cy="60" r="3.6" fill="#4a8fd0"/>
+  <text x="108" y="52" font-family="system-ui,sans-serif" font-size="11.5" fill="#4a8fd0">100 mm² 到 90.5%</text>
+
+  <line x1="380" y1="156" x2="380" y2="250" stroke="#4a8fd0" stroke-width="1" stroke-dasharray="3 4"/>
+  <circle cx="380" cy="156" r="3.6" fill="#4a8fd0"/>
+  <text x="372" y="174" font-family="system-ui,sans-serif" font-size="11.5" fill="#4a8fd0" text-anchor="end">800 mm² 到 44.9%</text>
+
+  <!-- 图例 -->
+  <line x1="252" y1="56" x2="272" y2="56" stroke="#4a8fd0" stroke-width="2.2"/>
+  <text x="278" y="60" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">D0 = 0.1 颗/cm²（成熟产线）</text>
+  <line x1="252" y1="74" x2="272" y2="74" stroke="#e06c6c" stroke-width="2.2" stroke-dasharray="6 4"/>
+  <text x="278" y="78" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">D0 = 0.2 颗/cm²（新节点爬坡）</text>
+
+  <text x="24" y="300" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">拆分的收益来自良品芯粒可以自由配对，坏一颗只丢那一颗；</text>
+  <text x="24" y="317" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">而不是靠「8 颗全好的概率」——后者等于 0.905 的 8 次方，与单片完全相同。</text>
+
+  <!-- 分隔 -->
+  <line x1="436" y1="36" x2="436" y2="322" stroke="#e3e8f0" stroke-width="1"/>
+
+  <text x="452" y="50" font-family="system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#8b97a8">② 同样 800 mm² 的硅：单片 vs 8 颗芯粒</text>
+
+  <!-- 单片 -->
+  <text x="468" y="72" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">单片 800 mm²</text>
+  <rect x="468" y="80" width="100" height="100" fill="url(#clDieG)" stroke="#4a5666" stroke-width="1.5"/>
+  <line x1="468" y1="80" x2="568" y2="180" stroke="#e06c6c" stroke-width="2"/>
+  <line x1="568" y1="80" x2="468" y2="180" stroke="#e06c6c" stroke-width="2"/>
+  <circle cx="500" cy="104" r="3" fill="#ffe8e8"/>
+  <circle cx="536" cy="148" r="3" fill="#ffe8e8"/>
+  <text x="468" y="196" font-family="system-ui,sans-serif" font-size="11.5" fill="#e06c6c">一颗缺陷，整块报废</text>
+  <text x="468" y="212" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">良率 44.9%</text>
+  <text x="468" y="228" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">每片 28.7 套</text>
+
+  <!-- 8 颗芯粒 -->
+  <text x="600" y="72" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">8 × 100 mm² 芯粒</text>
+  <g stroke="#4a5666" stroke-width="1.2" fill="#9db3d0">
+    <rect x="600" y="80" width="40" height="40"/>
+    <rect x="644" y="80" width="40" height="40"/>
+    <rect x="732" y="80" width="40" height="40"/>
+    <rect x="600" y="124" width="40" height="40"/>
+    <rect x="644" y="124" width="40" height="40"/>
+    <rect x="688" y="124" width="40" height="40"/>
+    <rect x="732" y="124" width="40" height="40"/>
+  </g>
+  <rect x="688" y="80" width="40" height="40" fill="#f2cccc" stroke="#e06c6c" stroke-width="1.6"/>
+  <circle cx="708" cy="100" r="3.4" fill="#c0392b"/>
+  <text x="600" y="186" font-family="system-ui,sans-serif" font-size="11.5" fill="#e06c6c">一颗缺陷只丢 1/8 的硅</text>
+  <text x="600" y="202" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">单颗良率 90.5%</text>
+  <text x="600" y="218" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">每片 579 颗良品，可凑 72.4 套</text>
+
+  <line x1="452" y1="244" x2="772" y2="244" stroke="#e3e8f0" stroke-width="1"/>
+  <text x="452" y="264" font-family="system-ui,sans-serif" font-size="11.5" fill="#4a8fd0">每片晶圆可出货的等效算力：28.7 到 72.4 套，约 2.5 倍</text>
+  <text x="452" y="282" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">来源：良率指数提升 + 小芯片的边缘损耗占比更低</text>
+  <text x="452" y="302" font-family="system-ui,sans-serif" font-size="11.5" fill="#e06c6c">继续拆到 16 颗只再增 8%：收益递减很快，不是越碎越好</text>
+</svg>

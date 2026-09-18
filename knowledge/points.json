@@ -322,6 +322,222 @@
       "appearsIn": [
         "traditional/test"
       ]
+    },
+    "bp.why": {
+      "title": "为什么需要 Bumping：从拉线互连到面阵互连",
+      "appearsIn": [
+        "advanced/bumping"
+      ]
+    },
+    "bp.ubm": {
+      "title": "UBM：为什么凸点底下必须垫三层金属",
+      "appearsIn": [
+        "advanced/bumping"
+      ]
+    },
+    "bp.methods": {
+      "title": "凸点怎么做上去：五条路线与它们的最小节距",
+      "appearsIn": [
+        "advanced/bumping"
+      ]
+    },
+    "bp.pillar": {
+      "title": "材料与无铅化：从 SnPb 到 Cu 柱",
+      "appearsIn": [
+        "advanced/bumping"
+      ]
+    },
+    "bp.reflow": {
+      "title": "回流成球与共面性：高度均匀性是怎么丢掉的",
+      "appearsIn": [
+        "advanced/bumping"
+      ]
+    },
+    "bp.defects": {
+      "title": "检测与失效：剪切强度合格不代表可靠",
+      "appearsIn": [
+        "advanced/bumping"
+      ]
+    },
+    "wl.what": {
+      "title": "WLCSP 到底是什么：边界、面积比与它不可替代的位置",
+      "appearsIn": [
+        "advanced/wlcsp"
+      ]
+    },
+    "wl.rdl": {
+      "title": "RDL 重布线层：把周边焊盘变成面阵，顺带算出引脚数上限",
+      "appearsIn": [
+        "advanced/wlcsp"
+      ]
+    },
+    "wl.flow": {
+      "title": "晶圆级 vs 芯片级：同一批工序换个先后，代价结构就变了",
+      "appearsIn": [
+        "advanced/wlcsp"
+      ]
+    },
+    "wl.cte": {
+      "title": "CTE 失配：硅 2.6 对 FR-4 17，把应变算到小数点后",
+      "appearsIn": [
+        "advanced/wlcsp"
+      ]
+    },
+    "wl.size": {
+      "title": "尺寸效应：DNP 的平方律，决定了 WLCSP 只能做小芯片",
+      "appearsIn": [
+        "advanced/wlcsp"
+      ]
+    },
+    "wl.fail": {
+      "title": "失效模式与检测：焊点疲劳、界面脆断、跌落，以及填充的边界",
+      "appearsIn": [
+        "advanced/wlcsp"
+      ]
+    },
+    "fo.why": {
+      "title": "Fan-out 到底解决了什么：把引脚数的天花板算出来",
+      "appearsIn": [
+        "advanced/fan-out"
+      ]
+    },
+    "fo.recon": {
+      "title": "塑封重构与 KGD：为什么必须先把芯片测好再埋进去",
+      "appearsIn": [
+        "advanced/fan-out"
+      ]
+    },
+    "fo.rdl": {
+      "title": "RDL 与模面：Fan-out 的布线能力到底有多少",
+      "appearsIn": [
+        "advanced/fan-out"
+      ]
+    },
+    "fo.dieshift": {
+      "title": "die shift：Fan-out 独有的对准难题，用余量预算算清楚",
+      "appearsIn": [
+        "advanced/fan-out"
+      ]
+    },
+    "fo.warpage": {
+      "title": "翘曲：Fan-out 最大的工程难点，而且它同时是光刻问题",
+      "appearsIn": [
+        "advanced/fan-out"
+      ]
+    },
+    "fo.routes": {
+      "title": "路线之争：chip-first、chip-last 与它们的应用与失效",
+      "appearsIn": [
+        "advanced/fan-out"
+      ]
+    },
+    "tv.why": {
+      "title": "TSV 的价值：把「最短互连」算成数字",
+      "appearsIn": [
+        "advanced/tsv"
+      ]
+    },
+    "tv.flow": {
+      "title": "工艺流程全景：AR 不是静态的，每加一层都更差",
+      "appearsIn": [
+        "advanced/tsv"
+      ]
+    },
+    "tv.bosch": {
+      "title": "Bosch 工艺与侧壁扇贝纹：垂直是怎么来的，代价是什么",
+      "appearsIn": [
+        "advanced/tsv"
+      ]
+    },
+    "tv.plating": {
+      "title": "电镀填充的物理：为什么 AR 一大就填不进去",
+      "appearsIn": [
+        "advanced/tsv"
+      ]
+    },
+    "tv.koz": {
+      "title": "热应力与禁布区 KOZ：为什么 TSV 周围不能放器件",
+      "appearsIn": [
+        "advanced/tsv"
+      ]
+    },
+    "tv.reveal": {
+      "title": "露头与失效：盲孔变通孔的最后一公里",
+      "appearsIn": [
+        "advanced/tsv"
+      ]
+    },
+    "st.split": {
+      "title": "2.5D 与 3D 的本质区别：并排还是叠起来",
+      "appearsIn": [
+        "advanced/stacking"
+      ]
+    },
+    "st.interposer": {
+      "title": "硅中介层：把互连从 PCB 级搬到硅级",
+      "appearsIn": [
+        "advanced/stacking"
+      ]
+    },
+    "st.bonding": {
+      "title": "微凸点与混合键合：节距从 40 μm 走到个位数微米",
+      "appearsIn": [
+        "advanced/stacking"
+      ]
+    },
+    "st.hbm": {
+      "title": "HBM 与存储堆叠：带宽是靠堆出来的",
+      "appearsIn": [
+        "advanced/stacking"
+      ]
+    },
+    "st.thermal": {
+      "title": "散热与热管理：3D 堆叠真正的天花板",
+      "appearsIn": [
+        "advanced/stacking"
+      ]
+    },
+    "st.yield": {
+      "title": "良率经济学：为什么「先测再堆」是硬约束",
+      "appearsIn": [
+        "advanced/stacking"
+      ]
+    },
+    "cl.why": {
+      "title": "为什么要拆：把良率经济学算出来",
+      "appearsIn": [
+        "advanced/chiplet"
+      ]
+    },
+    "cl.cost": {
+      "title": "拆的代价：能耗、延迟、面积与整包报废",
+      "appearsIn": [
+        "advanced/chiplet"
+      ]
+    },
+    "cl.d2d": {
+      "title": "D2D 互连：标准、凸点间距算术与形态取舍",
+      "appearsIn": [
+        "advanced/chiplet"
+      ]
+    },
+    "cl.hetero": {
+      "title": "异构集成：什么该上最先进节点，什么不该",
+      "appearsIn": [
+        "advanced/chiplet"
+      ]
+    },
+    "cl.ecosystem": {
+      "title": "标准、KGD 与商业模式：芯粒拼得起来吗",
+      "appearsIn": [
+        "advanced/chiplet"
+      ]
+    },
+    "cl.reliability": {
+      "title": "失效与可靠性：D2D 链路、微凸点与热机械耦合",
+      "appearsIn": [
+        "advanced/chiplet"
+      ]
     }
   }
 }

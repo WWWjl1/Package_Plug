@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="WLCSP 重布线层 RDL 剖面与面阵球平面示意">
+  <defs>
+    <linearGradient id="wlSi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <linearGradient id="wlPbo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8d9a8"/>
+      <stop offset="1" stop-color="#d3ba7c"/>
+    </linearGradient>
+    <linearGradient id="wlCu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2a463"/>
+      <stop offset="1" stop-color="#b8763a"/>
+    </linearGradient>
+    <linearGradient id="wlBall" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#eef2f7"/>
+      <stop offset="1" stop-color="#aab5c4"/>
+    </linearGradient>
+    <marker id="wlA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">① 剖面：RDL 把周边焊盘重排到面阵位置</text>
+  <text x="460" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">② 平面：周边焊盘 → 0.4 mm 面阵球</text>
+
+  <!-- ==================== ① 剖面 ==================== -->
+  <rect x="40" y="182" width="240" height="86" fill="url(#wlSi)" stroke="#4a5666" stroke-width="1.5"/>
+  <text x="160" y="230" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">硅芯片本体</text>
+
+  <rect x="40" y="170" width="34" height="12" fill="#b9c6d8" stroke="#8b97a8" stroke-width="1"/>
+  <rect x="138" y="170" width="142" height="12" fill="#b9c6d8" stroke="#8b97a8" stroke-width="1"/>
+
+  <rect x="74" y="170" width="64" height="12" fill="#8f9db2" stroke="#66748a" stroke-width="1"/>
+  <text x="106" y="179.5" font-family="system-ui,sans-serif" font-size="9.5" fill="#ffffff" text-anchor="middle">Al 焊盘</text>
+
+  <rect x="40" y="154" width="34" height="16" fill="url(#wlPbo)" stroke="#a89052" stroke-width="1"/>
+  <rect x="138" y="154" width="84" height="16" fill="url(#wlPbo)" stroke="#a89052" stroke-width="1"/>
+  <rect x="258" y="154" width="22" height="16" fill="url(#wlPbo)" stroke="#a89052" stroke-width="1"/>
+
+  <rect x="88" y="158" width="156" height="8" fill="url(#wlCu)" stroke="#8d5a25" stroke-width="1"/>
+  <rect x="90" y="166" width="20" height="4" fill="url(#wlCu)" stroke="#8d5a25" stroke-width="0.8"/>
+  <rect x="228" y="142" width="20" height="16" fill="url(#wlCu)" stroke="#8d5a25" stroke-width="1"/>
+
+  <rect x="40" y="142" width="182" height="12" fill="url(#wlPbo)" stroke="#a89052" stroke-width="1"/>
+  <rect x="258" y="142" width="22" height="12" fill="url(#wlPbo)" stroke="#a89052" stroke-width="1"/>
+
+  <rect x="222" y="134" width="36" height="8" fill="#ccd6e2" stroke="#8b97a8" stroke-width="1"/>
+
+  <circle cx="240" cy="113" r="20" fill="url(#wlBall)" stroke="#93a1b5" stroke-width="1.2"/>
+
+  <line x1="262" y1="113" x2="298" y2="113" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#wlA)"/>
+  <text x="304" y="117" font-family="system-ui,sans-serif" font-size="11.5" fill="#6b7a8d">焊球（SnAg）</text>
+
+  <line x1="260" y1="136" x2="298" y2="136" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#wlA)"/>
+  <text x="304" y="140" font-family="system-ui,sans-serif" font-size="11.5" fill="#6b7a8d">UBM</text>
+
+  <line x1="282" y1="150" x2="298" y2="150" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#wlA)"/>
+  <text x="304" y="154" font-family="system-ui,sans-serif" font-size="11.5" fill="#6b7a8d">钝化层 PBO/PI</text>
+
+  <line x1="246" y1="166" x2="298" y2="166" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#wlA)"/>
+  <text x="304" y="170" font-family="system-ui,sans-serif" font-size="11.5" fill="#6b7a8d">Cu RDL</text>
+
+  <line x1="282" y1="228" x2="298" y2="228" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#wlA)"/>
+  <text x="304" y="232" font-family="system-ui,sans-serif" font-size="11.5" fill="#6b7a8d">硅芯片</text>
+
+  <!-- ==================== ② 平面 ==================== -->
+  <rect x="462" y="58" width="204" height="204" fill="#eef2f7" stroke="#4a5666" stroke-width="1.5"/>
+
+  <rect x="482" y="61" width="164" height="4" fill="none" stroke="#8b97a8" stroke-width="4" stroke-dasharray="1.6 1.6"/>
+  <rect x="482" y="255" width="164" height="4" fill="none" stroke="#8b97a8" stroke-width="4" stroke-dasharray="1.6 1.6"/>
+  <rect x="465" y="81" width="4" height="158" fill="none" stroke="#8b97a8" stroke-width="4" stroke-dasharray="1.6 1.6"/>
+  <rect x="659" y="81" width="4" height="158" fill="none" stroke="#8b97a8" stroke-width="4" stroke-dasharray="1.6 1.6"/>
+  <text x="564" y="50" font-family="system-ui,sans-serif" font-size="10.5" fill="#8b97a8" text-anchor="middle">原始周边焊盘（约 50 μm 节距，约 60 个/边）</text>
+
+  <g fill="#c7d0dc" stroke="#8b97a8" stroke-width="1">
+    <circle cx="496" cy="92" r="8.5"/><circle cx="523" cy="92" r="8.5"/><circle cx="550" cy="92" r="8.5"/><circle cx="578" cy="92" r="8.5"/><circle cx="605" cy="92" r="8.5"/><circle cx="632" cy="92" r="8.5"/>
+    <circle cx="496" cy="119" r="8.5"/><circle cx="523" cy="119" r="8.5"/><circle cx="550" cy="119" r="8.5"/><circle cx="578" cy="119" r="8.5"/><circle cx="605" cy="119" r="8.5"/><circle cx="632" cy="119" r="8.5"/>
+    <circle cx="496" cy="146" r="8.5"/><circle cx="523" cy="146" r="8.5"/><circle cx="550" cy="146" r="8.5"/><circle cx="578" cy="146" r="8.5"/><circle cx="605" cy="146" r="8.5"/><circle cx="632" cy="146" r="8.5"/>
+    <circle cx="496" cy="174" r="8.5"/><circle cx="523" cy="174" r="8.5"/><circle cx="550" cy="174" r="8.5"/><circle cx="578" cy="174" r="8.5"/><circle cx="605" cy="174" r="8.5"/><circle cx="632" cy="174" r="8.5"/>
+    <circle cx="496" cy="201" r="8.5"/><circle cx="523" cy="201" r="8.5"/><circle cx="550" cy="201" r="8.5"/><circle cx="578" cy="201" r="8.5"/><circle cx="605" cy="201" r="8.5"/><circle cx="632" cy="201" r="8.5"/>
+    <circle cx="496" cy="228" r="8.5"/><circle cx="523" cy="228" r="8.5"/><circle cx="550" cy="228" r="8.5"/><circle cx="578" cy="228" r="8.5"/><circle cx="605" cy="228" r="8.5"/><circle cx="632" cy="228" r="8.5"/>
+  </g>
+
+  <!-- 中性点（芯片与球阵的几何中心） -->
+  <line x1="564" y1="154" x2="564" y2="166" stroke="#e06c6c" stroke-width="1.4"/>
+  <line x1="558" y1="160" x2="570" y2="160" stroke="#e06c6c" stroke-width="1.4"/>
+  <line x1="571" y1="160" x2="666" y2="160" stroke="#e06c6c" stroke-width="1.1" marker-end="url(#wlA)"/>
+  <text x="672" y="164" font-family="system-ui,sans-serif" font-size="11" fill="#e06c6c">中性点</text>
+
+  <!-- DNP：中性点到最远角球 -->
+  <line x1="564" y1="160" x2="632" y2="228" stroke="#e06c6c" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <line x1="636" y1="224" x2="666" y2="224" stroke="#e06c6c" stroke-width="1.1" marker-end="url(#wlA)"/>
+  <text x="672" y="220" font-family="system-ui,sans-serif" font-size="11" fill="#e06c6c">DNP</text>
+  <text x="672" y="236" font-family="system-ui,sans-serif" font-size="11" fill="#e06c6c">最远球</text>
+
+  <!-- 边缘留白 -->
+  <line x1="462" y1="246" x2="496" y2="246" stroke="#4a8fd0" stroke-width="1.4"/>
+  <line x1="462" y1="241" x2="462" y2="251" stroke="#4a8fd0" stroke-width="1.2"/>
+  <line x1="496" y1="241" x2="496" y2="251" stroke="#4a8fd0" stroke-width="1.2"/>
+  <text x="502" y="250" font-family="system-ui,sans-serif" font-size="10.5" fill="#4a8fd0">留白 0.5 mm</text>
+
+  <!-- 球间距 -->
+  <line x1="496" y1="274" x2="523" y2="274" stroke="#4a8fd0" stroke-width="1.4"/>
+  <line x1="496" y1="269" x2="496" y2="279" stroke="#4a8fd0" stroke-width="1.2"/>
+  <line x1="523" y1="269" x2="523" y2="279" stroke="#4a8fd0" stroke-width="1.2"/>
+  <text x="509" y="291" font-family="system-ui,sans-serif" font-size="10.5" fill="#4a8fd0" text-anchor="middle">0.4 mm</text>
+
+  <!-- ==================== 全图注 ==================== -->
+  <text x="24" y="301" font-family="system-ui,sans-serif" font-size="10.5" fill="#8b97a8">剖面自下而上：硅芯片 → Al 焊盘 → 介质层 PBO/PI（5～10 μm）→ 电镀铜 RDL（3～5 μm）→ UBM → SnAg 焊球</text>
+  <text x="24" y="319" font-family="system-ui,sans-serif" font-size="10.5" fill="#8b97a8">平面：3 × 3 mm 芯片、0.4 mm 球间距、最外圈球心留白 0.5 mm → 球阵跨度 2.0 mm → 6 × 6 = 36 颗球（球数 ≈（跨度 ÷ 间距 + 1）²）</text>
+</svg>

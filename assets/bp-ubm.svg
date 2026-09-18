@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%">
+  <rect x="0" y="0" width="780" height="330" fill="#fbfcfe"/>
+
+  <text x="24" y="26" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1f2937">凸点剖面与 UBM 三层功能</text>
+
+  <line x1="392" y1="42" x2="392" y2="312" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <text x="40" y="54" font-family="sans-serif" font-size="11" fill="#64748b">整颗凸点剖面（示意，未按比例）</text>
+
+  <rect x="40" y="270" width="320" height="36" fill="#8fa3b8"/>
+  <text x="52" y="293" font-family="sans-serif" font-size="11" fill="#0f172a">Si 衬底</text>
+
+  <rect x="40" y="248" width="115" height="22" fill="#a7d3c8"/>
+  <rect x="245" y="248" width="115" height="22" fill="#a7d3c8"/>
+  <text x="48" y="263" font-family="sans-serif" font-size="10" fill="#0f172a">钝化层</text>
+  <text x="256" y="263" font-family="sans-serif" font-size="10" fill="#0f172a">钝化层</text>
+
+  <rect x="155" y="248" width="90" height="22" fill="#cfd8e3"/>
+  <text x="163" y="263" font-family="sans-serif" font-size="10" fill="#0f172a">Al 焊盘</text>
+
+  <rect x="70" y="239" width="260" height="9" fill="#c98a4b"/>
+
+  <path d="M125 239 L125 175 A75 55 0 0 1 275 175 L275 239 Z" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+  <text x="200" y="212" font-family="sans-serif" font-size="12" fill="#334155" text-anchor="middle">焊料凸点</text>
+  <text x="200" y="231" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">SnAg / SnPb</text>
+
+  <line x1="120" y1="239" x2="120" y2="214" stroke="#c98a4b" stroke-width="1.2"/>
+  <line x1="120" y1="214" x2="106" y2="206" stroke="#c98a4b" stroke-width="1.2"/>
+  <text x="102" y="199" font-family="sans-serif" font-size="10" fill="#a16207" text-anchor="end">UBM 三层叠层</text>
+
+  <text x="420" y="52" font-family="sans-serif" font-size="11" fill="#64748b">UBM 三层：一层一个功能，互不替代</text>
+
+  <rect x="420" y="66" width="340" height="26" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="430" y="84" font-family="sans-serif" font-size="11" fill="#334155">SnAg 焊料帽：提供一次熔融以形成连接</text>
+
+  <rect x="420" y="96" width="340" height="48" fill="#d99a5b"/>
+  <text x="430" y="117" font-family="sans-serif" font-size="11" font-weight="bold" fill="#4a2c10">Cu 润湿层（wetting）</text>
+  <text x="430" y="134" font-family="sans-serif" font-size="10" fill="#4a2c10">被焊料润湿，反应生成 Cu6Sn5</text>
+
+  <rect x="420" y="148" width="340" height="48" fill="#9aa7b4"/>
+  <text x="430" y="169" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1e293b">Ni(V) 阻挡层（barrier）</text>
+  <text x="430" y="186" font-family="sans-serif" font-size="10" fill="#1e293b">挡住 Sn 向 Al 扩散，消耗速率比 Cu 慢约一个量级</text>
+
+  <rect x="420" y="200" width="340" height="48" fill="#b08968"/>
+  <text x="430" y="221" font-family="sans-serif" font-size="11" font-weight="bold" fill="#33210f">TiW / Ti 附着层（adhesion）</text>
+  <text x="430" y="238" font-family="sans-serif" font-size="10" fill="#33210f">牢牢抓在 Al 焊盘与钝化层上</text>
+
+  <rect x="420" y="252" width="340" height="32" fill="#cfd8e3"/>
+  <text x="430" y="272" font-family="sans-serif" font-size="11" fill="#1f2937">Al 焊盘 / 钝化层</text>
+
+  <text x="420" y="304" font-family="sans-serif" font-size="10" fill="#b91c1c">缺任何一层都会出问题：要么不润湿，要么界面被 Sn 吃穿后剥离</text>
+</svg>

@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="2.5D 与 3D 堆叠剖面对比">
+  <defs>
+    <linearGradient id="stSi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <linearGradient id="stIp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cbd9ea"/>
+      <stop offset="1" stop-color="#8ea3bd"/>
+    </linearGradient>
+    <linearGradient id="stSub" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a6a7e"/>
+      <stop offset="1" stop-color="#39424f"/>
+    </linearGradient>
+    <marker id="stArw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e06c6c"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">① 2.5D：芯片并排在中介层上，互连走水平 RDL</text>
+  <text x="400" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">② 3D：芯片垂直直接叠放，互连垂直贯通</text>
+
+  <!-- ===== ① 2.5D ===== -->
+  <rect x="62" y="94" width="76" height="52" fill="url(#stSi)" stroke="#4a5666" stroke-width="1.5"/>
+  <rect x="146" y="94" width="104" height="52" fill="url(#stSi)" stroke="#4a5666" stroke-width="1.5"/>
+  <rect x="258" y="94" width="76" height="52" fill="url(#stSi)" stroke="#4a5666" stroke-width="1.5"/>
+  <text x="100" y="125" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">HBM</text>
+  <text x="198" y="125" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">逻辑 SoC</text>
+  <text x="296" y="125" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">HBM</text>
+
+  <g fill="#c9a26b" stroke="#a5843f" stroke-width="0.8">
+    <rect x="70" y="146" width="10" height="10"/>
+    <rect x="90" y="146" width="10" height="10"/>
+    <rect x="110" y="146" width="10" height="10"/>
+    <rect x="130" y="146" width="10" height="10"/>
+    <rect x="154" y="146" width="10" height="10"/>
+    <rect x="176" y="146" width="10" height="10"/>
+    <rect x="198" y="146" width="10" height="10"/>
+    <rect x="220" y="146" width="10" height="10"/>
+    <rect x="238" y="146" width="10" height="10"/>
+    <rect x="266" y="146" width="10" height="10"/>
+    <rect x="286" y="146" width="10" height="10"/>
+    <rect x="306" y="146" width="10" height="10"/>
+    <rect x="326" y="146" width="10" height="10"/>
+  </g>
+  <text x="352" y="155" font-family="system-ui,sans-serif" font-size="11" fill="#a5843f">微凸点</text>
+
+  <rect x="48" y="156" width="298" height="36" fill="url(#stIp)" stroke="#6f8399" stroke-width="1.5"/>
+  <rect x="48" y="156" width="298" height="10" fill="#e6eef8" opacity="0.7"/>
+
+  <g stroke="#3f4b5c" stroke-width="3">
+    <line x1="62" y1="166" x2="62" y2="192"/>
+    <line x1="78" y1="166" x2="78" y2="192"/>
+    <line x1="94" y1="166" x2="94" y2="192"/>
+    <line x1="296" y1="166" x2="296" y2="192"/>
+    <line x1="312" y1="166" x2="312" y2="192"/>
+    <line x1="328" y1="166" x2="328" y2="192"/>
+    <line x1="342" y1="166" x2="342" y2="192"/>
+  </g>
+
+  <path d="M110,146 L110,161 L198,161" stroke="#e06c6c" stroke-width="1.8" fill="none"/>
+  <g stroke="#e06c6c" stroke-width="1.8" marker-end="url(#stArw)">
+    <line x1="198" y1="161" x2="198" y2="149"/>
+    <line x1="110" y1="161" x2="110" y2="149"/>
+  </g>
+  <text x="210" y="164" font-family="system-ui,sans-serif" font-size="10.5" fill="#e06c6c">芯片间走水平 RDL</text>
+  <text x="200" y="184" font-family="system-ui,sans-serif" font-size="11" fill="#2f3946" text-anchor="middle">硅中介层（RDL + TSV）</text>
+
+  <g fill="#b8a06a" stroke="#8d7742" stroke-width="0.8">
+    <rect x="60" y="192" width="12" height="10"/>
+    <rect x="90" y="192" width="12" height="10"/>
+    <rect x="120" y="192" width="12" height="10"/>
+    <rect x="150" y="192" width="12" height="10"/>
+    <rect x="180" y="192" width="12" height="10"/>
+    <rect x="210" y="192" width="12" height="10"/>
+    <rect x="240" y="192" width="12" height="10"/>
+    <rect x="270" y="192" width="12" height="10"/>
+    <rect x="300" y="192" width="12" height="10"/>
+    <rect x="324" y="192" width="12" height="10"/>
+  </g>
+  <text x="352" y="201" font-family="system-ui,sans-serif" font-size="11" fill="#8d7742">C4</text>
+
+  <rect x="48" y="202" width="298" height="22" fill="url(#stSub)" stroke="#2f3946" stroke-width="1.2"/>
+  <text x="197" y="217" font-family="system-ui,sans-serif" font-size="12" fill="#e6ecf5" text-anchor="middle">封装基板</text>
+
+  <g fill="#b8c4d4">
+    <circle cx="80" cy="230" r="4.5"/>
+    <circle cx="120" cy="230" r="4.5"/>
+    <circle cx="160" cy="230" r="4.5"/>
+    <circle cx="200" cy="230" r="4.5"/>
+    <circle cx="240" cy="230" r="4.5"/>
+    <circle cx="280" cy="230" r="4.5"/>
+    <circle cx="320" cy="230" r="4.5"/>
+  </g>
+
+  <rect x="48" y="237" width="298" height="20" fill="#16202c" stroke="#5d7699" stroke-width="1.2"/>
+  <text x="197" y="251" font-family="system-ui,sans-serif" font-size="11.5" fill="#e6ecf5" text-anchor="middle">PCB</text>
+
+  <!-- ===== ② 3D ===== -->
+  <g fill="url(#stSi)" stroke="#4a5666" stroke-width="1.5">
+    <rect x="500" y="62" width="150" height="26"/>
+    <rect x="500" y="91" width="150" height="26"/>
+    <rect x="500" y="120" width="150" height="26"/>
+    <rect x="500" y="149" width="150" height="26"/>
+  </g>
+
+  <g stroke="#3f4b5c" stroke-width="2.4">
+    <line x1="505" y1="62" x2="505" y2="175"/>
+    <line x1="522" y1="62" x2="522" y2="175"/>
+    <line x1="539" y1="62" x2="539" y2="175"/>
+    <line x1="611" y1="62" x2="611" y2="175"/>
+    <line x1="628" y1="62" x2="628" y2="175"/>
+    <line x1="645" y1="62" x2="645" y2="175"/>
+  </g>
+
+  <g fill="#e0b070" stroke="#b8894a" stroke-width="0.8">
+    <rect x="500" y="88" width="150" height="3"/>
+    <rect x="500" y="117" width="150" height="3"/>
+    <rect x="500" y="146" width="150" height="3"/>
+  </g>
+
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+    <text x="575" y="79">第 4 层</text>
+    <text x="575" y="108">第 3 层</text>
+    <text x="575" y="137">第 2 层</text>
+    <text x="575" y="166">第 1 层</text>
+  </g>
+
+  <path d="M478,162 L478,72" stroke="#e06c6c" stroke-width="1.8" fill="none" marker-end="url(#stArw)"/>
+  <g font-family="system-ui,sans-serif" font-size="11.5" fill="#e06c6c">
+    <text x="392" y="104">中间层的热</text>
+    <text x="392" y="120">只能穿过邻居</text>
+    <text x="392" y="136">才能到散热面</text>
+  </g>
+
+  <g fill="#c9a26b" stroke="#a5843f" stroke-width="0.8">
+    <rect x="512" y="175" width="12" height="10"/>
+    <rect x="542" y="175" width="12" height="10"/>
+    <rect x="572" y="175" width="12" height="10"/>
+    <rect x="602" y="175" width="12" height="10"/>
+    <rect x="632" y="175" width="12" height="10"/>
+  </g>
+
+  <rect x="500" y="185" width="150" height="26" fill="url(#stSub)" stroke="#2f3946" stroke-width="1.2"/>
+  <text x="575" y="202" font-family="system-ui,sans-serif" font-size="12" fill="#e6ecf5" text-anchor="middle">基板</text>
+
+  <g fill="#b8c4d4">
+    <circle cx="520" cy="217" r="4.5"/>
+    <circle cx="550" cy="217" r="4.5"/>
+    <circle cx="580" cy="217" r="4.5"/>
+    <circle cx="610" cy="217" r="4.5"/>
+    <circle cx="640" cy="217" r="4.5"/>
+  </g>
+
+  <rect x="500" y="224" width="150" height="20" fill="#16202c" stroke="#5d7699" stroke-width="1.2"/>
+  <text x="575" y="238" font-family="system-ui,sans-serif" font-size="11.5" fill="#e6ecf5" text-anchor="middle">PCB</text>
+
+  <g font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">
+    <line x1="650" y1="147.5" x2="662" y2="147.5" stroke="#b8894a" stroke-width="1.2"/>
+    <text x="666" y="151" fill="#b8894a">键合界面（无焊料）</text>
+    <line x1="650" y1="180" x2="662" y2="180" stroke="#a5843f" stroke-width="1.2"/>
+    <text x="666" y="184" fill="#a5843f">微凸点</text>
+  </g>
+
+  <!-- ===== 底部对照 ===== -->
+  <g font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">
+    <text x="24" y="278">互连路径：芯片 → 微凸点 → 中介层 RDL → 芯片</text>
+    <text x="24" y="296">2.5D 各芯片散热通路并联：功耗密度不叠加</text>
+    <text x="24" y="314">中介层通常无源，只做连线与供电；互连长度数百 μm ～ mm</text>
+
+    <text x="392" y="278">互连路径：芯片 → 键合界面 → 芯片（十 μm 级）</text>
+    <text x="392" y="296">中间层的热必须穿过邻居，功耗密度沿垂直方向相加</text>
+    <text x="392" y="314">各层串联：任一层失效即整栈报废，良率按层数相乘</text>
+  </g>
+</svg>
