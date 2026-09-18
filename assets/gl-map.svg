@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="互连术语体系图：Wire Bond / Flip Chip / Bumping / RDL / TSV / C4 / 微凸点 / 混合键合 的三层结构">
+  <defs>
+    <linearGradient id="glBox" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6d81a0"/>
+      <stop offset="1" stop-color="#44526a"/>
+    </linearGradient>
+    <marker id="glArrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a8fd0"/>
+    </marker>
+    <marker id="glArrowR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e06c6c"/>
+    </marker>
+    <marker id="glArrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c8b07a"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">互连术语体系：先问「在哪一层」，再问「谁是主体」</text>
+  <text x="24" y="46" font-family="system-ui,sans-serif" font-size="12" fill="#7b8798">八种互连词分属三个层；层内是替代关系，层间是包含与前置关系——不是八种并列工艺</text>
+
+  <!-- ========== 层带 ========== -->
+  <rect x="24" y="58" width="732" height="64" rx="8" fill="#4a8fd0" fill-opacity="0.07" stroke="#4a8fd0" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="24" y="136" width="732" height="78" rx="8" fill="#c8b07a" fill-opacity="0.07" stroke="#c8b07a" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="24" y="228" width="732" height="78" rx="8" fill="#6d81a0" fill-opacity="0.07" stroke="#6d81a0" stroke-opacity="0.4" stroke-width="1"/>
+
+  <text x="38" y="86" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#4a8fd0">第一层</text>
+  <text x="38" y="106" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">芯片表面引出</text>
+
+  <text x="38" y="164" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#c8b07a">第二层</text>
+  <text x="38" y="184" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">芯片 ↔ 基板</text>
+
+  <text x="38" y="256" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#8fc0e8">第三层</text>
+  <text x="38" y="276" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">芯片 ↔ 芯片</text>
+
+  <!-- ========== 第一层 ========== -->
+  <rect x="180" y="70" width="210" height="42" rx="6" fill="url(#glBox)" stroke="#37415a" stroke-width="1.2"/>
+  <text x="285" y="88" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">RDL 重布线层</text>
+  <text x="285" y="104" font-family="system-ui,sans-serif" font-size="11" fill="#c7d2e2" text-anchor="middle">在晶圆表面把 pad 重新分布</text>
+
+  <rect x="412" y="70" width="210" height="42" rx="6" fill="url(#glBox)" stroke="#37415a" stroke-width="1.2"/>
+  <text x="517" y="88" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">Bumping 凸点工艺</text>
+  <text x="517" y="104" font-family="system-ui,sans-serif" font-size="11" fill="#c7d2e2" text-anchor="middle">在 pad 上长出凸点（总称）</text>
+
+  <text x="640" y="88" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">这一层是所有</text>
+  <text x="640" y="104" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">倒装方案的前置</text>
+
+  <!-- Bumping → 两类具体凸点 的连线 -->
+  <path d="M 600,112 L 600,128 L 656,128 L 656,144" fill="none" stroke="#c8b07a" stroke-width="1.3" marker-end="url(#glArrowG)"/>
+  <text x="690" y="134" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8b07a" text-anchor="middle">两种规格</text>
+
+  <!-- 层间关系注记（第一层与第二层之间） -->
+  <text x="170" y="131" font-family="system-ui,sans-serif" font-size="11" fill="#7b8798">Flip Chip 必须先做 Bumping（先长凸点，才能倒装贴装）</text>
+
+  <!-- ========== 第二层 ========== -->
+  <rect x="170" y="148" width="168" height="54" rx="6" fill="url(#glBox)" stroke="#37415a" stroke-width="1.2"/>
+  <text x="254" y="170" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">Wire Bond 引线键合</text>
+  <text x="254" y="188" font-family="system-ui,sans-serif" font-size="11" fill="#c7d2e2" text-anchor="middle">一根金属丝 + 两个焊点</text>
+
+  <rect x="372" y="148" width="168" height="54" rx="6" fill="url(#glBox)" stroke="#37415a" stroke-width="1.2"/>
+  <text x="456" y="170" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">Flip Chip 倒装焊</text>
+  <text x="456" y="188" font-family="system-ui,sans-serif" font-size="11" fill="#c7d2e2" text-anchor="middle">面朝下 + 凸点阵列贴装</text>
+
+  <line x1="342" y1="176" x2="368" y2="176" stroke="#e06c6c" stroke-width="1.5" marker-start="url(#glArrowR)" marker-end="url(#glArrowR)"/>
+  <text x="355" y="169" font-family="system-ui,sans-serif" font-size="10.5" fill="#e06c6c" text-anchor="middle">替代</text>
+
+  <rect x="576" y="148" width="180" height="54" rx="6" fill="none" stroke="#c8b07a" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="666" y="164" font-family="system-ui,sans-serif" font-size="10.5" fill="#c8b07a" text-anchor="middle">Bumping 的两种具体规格</text>
+  <text x="666" y="181" font-family="system-ui,sans-serif" font-size="11.5" fill="#c7d2e2" text-anchor="middle">C4 焊球凸点 · 间距大</text>
+  <text x="666" y="197" font-family="system-ui,sans-serif" font-size="11.5" fill="#c7d2e2" text-anchor="middle">微凸点 · 间距小</text>
+
+  <!-- 层间关系注记（第二层与第三层之间） -->
+  <text x="170" y="224" font-family="system-ui,sans-serif" font-size="11" fill="#7b8798">TSV 不是连接终点（两端还要靠 RDL 或微凸点引出来）；Hybrid Bonding 取消的正是凸点这一层</text>
+
+  <!-- ========== 第三层 ========== -->
+  <rect x="170" y="240" width="168" height="54" rx="6" fill="url(#glBox)" stroke="#37415a" stroke-width="1.2"/>
+  <text x="254" y="262" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">TSV 硅通孔</text>
+  <text x="254" y="280" font-family="system-ui,sans-serif" font-size="11" fill="#c7d2e2" text-anchor="middle">穿过硅片的垂直铜柱</text>
+
+  <rect x="372" y="240" width="168" height="54" rx="6" fill="url(#glBox)" stroke="#37415a" stroke-width="1.2"/>
+  <text x="456" y="262" font-family="system-ui,sans-serif" font-size="12.5" fill="#ffffff" text-anchor="middle">Hybrid Bonding</text>
+  <text x="456" y="280" font-family="system-ui,sans-serif" font-size="11" fill="#c7d2e2" text-anchor="middle">混合键合 · 铜对铜直接键合</text>
+
+  <text x="584" y="256" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">越往下走：</text>
+  <text x="584" y="274" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">互连更短 · 密度更高</text>
+  <text x="584" y="292" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">单位比特能耗更低</text>
+
+  <!-- 底部注记 -->
+  <text x="24" y="322" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">WLCSP / Fan-out = Bumping + RDL 做在晶圆级或重构级之后形成的封装形态，不是第三种互连</text>
+</svg>

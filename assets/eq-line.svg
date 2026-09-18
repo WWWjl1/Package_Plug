@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="后道产线设备流与节拍瓶颈示意">
+  <defs>
+    <linearGradient id="eqBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6aa6dd"/>
+      <stop offset="1" stop-color="#3a76b8"/>
+    </linearGradient>
+  </defs>
+
+  <text x="20" y="24" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#5d7699">后道产线设备流与节拍瓶颈</text>
+  <text x="20" y="42" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">示例：5 mm × 5 mm、48 引脚 QFN，单台设备；每片 12 吋晶圆约 2,700 颗</text>
+
+  <!-- 工序流程图 -->
+  <g font-family="system-ui,sans-serif" font-size="12" text-anchor="middle">
+    <rect x="20" y="58" width="82" height="34" rx="6" fill="#eef2f7" stroke="#93a1b5" stroke-width="1.2"/>
+    <text x="61" y="79" fill="#3d4655">减薄</text>
+    <rect x="114" y="58" width="82" height="34" rx="6" fill="#eef2f7" stroke="#93a1b5" stroke-width="1.2"/>
+    <text x="155" y="79" fill="#3d4655">划片</text>
+    <rect x="208" y="58" width="82" height="34" rx="6" fill="#eef2f7" stroke="#93a1b5" stroke-width="1.2"/>
+    <text x="249" y="79" fill="#3d4655">装片</text>
+    <rect x="302" y="58" width="82" height="34" rx="6" fill="#fbe9e9" stroke="#e06c6c" stroke-width="1.8"/>
+    <text x="343" y="79" fill="#b53b3b" font-weight="600">键合</text>
+    <rect x="396" y="58" width="82" height="34" rx="6" fill="#eef2f7" stroke="#93a1b5" stroke-width="1.2"/>
+    <text x="437" y="79" fill="#3d4655">塑封</text>
+    <rect x="490" y="58" width="82" height="34" rx="6" fill="#eef2f7" stroke="#93a1b5" stroke-width="1.2"/>
+    <text x="531" y="79" fill="#3d4655">植球</text>
+    <rect x="584" y="58" width="82" height="34" rx="6" fill="#eef2f7" stroke="#93a1b5" stroke-width="1.2"/>
+    <text x="625" y="79" fill="#3d4655" font-size="11.5">切筋成型</text>
+    <rect x="678" y="58" width="82" height="34" rx="6" fill="#eef2f7" stroke="#93a1b5" stroke-width="1.2"/>
+    <text x="719" y="79" fill="#3d4655">终测</text>
+  </g>
+
+  <!-- 流程箭头 -->
+  <g fill="#c3ccd8">
+    <path d="M104,70 L110,75 L104,80 z"/>
+    <path d="M198,70 L204,75 L198,80 z"/>
+    <path d="M292,70 L298,75 L292,80 z"/>
+    <path d="M386,70 L392,75 L386,80 z"/>
+    <path d="M480,70 L486,75 L480,80 z"/>
+    <path d="M574,70 L580,75 L574,80 z"/>
+    <path d="M668,70 L674,75 L668,80 z"/>
+  </g>
+
+  <!-- 单台设备理论 UPH -->
+  <g font-family="system-ui,sans-serif" font-size="10.5" fill="#8b97a8" text-anchor="middle">
+    <text x="61" y="106">54,000</text>
+    <text x="155" y="106">8,100</text>
+    <text x="249" y="106">10,300</text>
+    <text x="343" y="106" fill="#b53b3b" font-weight="600" font-size="11.5">1,875</text>
+    <text x="437" y="106">3,600</text>
+    <text x="531" y="106">16,200</text>
+    <text x="625" y="106">13,500</text>
+    <text x="719" y="106">19,200</text>
+  </g>
+  <text x="61" y="118" font-family="system-ui,sans-serif" font-size="9.5" fill="#a8b2c0">UPH/台</text>
+
+  <!-- 瓶颈标注 -->
+  <rect x="302" y="122" width="82" height="16" rx="4" fill="#e06c6c"/>
+  <text x="343" y="134" font-family="system-ui,sans-serif" font-size="10.5" fill="#ffffff" text-anchor="middle" font-weight="600">瓶颈工序</text>
+
+  <!-- 图表标题 -->
+  <text x="20" y="152" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#5d7699">每颗芯片占用的节拍（秒）</text>
+  <text x="176" y="152" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">柱高即节拍，最高的那根就是整线的产能上限</text>
+
+  <!-- 产能上限参考线 -->
+  <line x1="20" y1="181" x2="760" y2="181" stroke="#e06c6c" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="760" y="177" font-family="system-ui,sans-serif" font-size="10.5" fill="#e06c6c" text-anchor="end">全线产能上限 1.92 s/颗</text>
+
+  <!-- 节拍柱状图（基准线 y=262，比例 42 px/秒） -->
+  <g fill="url(#eqBar)">
+    <rect x="37" y="259" width="48" height="3" rx="1.5"/>
+    <rect x="131" y="243" width="48" height="19" rx="1.5"/>
+    <rect x="225" y="247" width="48" height="15" rx="1.5"/>
+    <rect x="507" y="253" width="48" height="9" rx="1.5"/>
+    <rect x="601" y="251" width="48" height="11" rx="1.5"/>
+    <rect x="695" y="254" width="48" height="8" rx="1.5"/>
+    <rect x="413" y="220" width="48" height="42" rx="1.5"/>
+  </g>
+  <rect x="319" y="181" width="48" height="81" rx="1.5" fill="#e06c6c"/>
+
+  <line x1="20" y1="262" x2="760" y2="262" stroke="#9aa7b8" stroke-width="1.4"/>
+
+  <g font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7a8d" text-anchor="middle">
+    <text x="61" y="254">0.07</text>
+    <text x="155" y="239">0.44</text>
+    <text x="249" y="243">0.35</text>
+    <text x="343" y="176" fill="#b53b3b" font-weight="600" font-size="11.5">1.92</text>
+    <text x="437" y="215">1.00</text>
+    <text x="531" y="248">0.22</text>
+    <text x="625" y="246">0.27</text>
+    <text x="719" y="250">0.19</text>
+  </g>
+
+  <g font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">
+    <text x="20" y="282">节拍 = 每颗芯片占用的设备时间；UPH = 3600 / 节拍。键合 1.92 s 对应 1,875 UPH，是整线产能上限。</text>
+    <text x="20" y="300">产能配比（月产 500 万颗、稼动率 0.85）：1 台装片 : 6 台键合 : 3 台塑封 : 1 台终测</text>
+    <text x="20" y="318" font-size="11.5">注：数值为示例量级，用于说明计算方法；实际有效 UPH 还需乘稼动率与良率。</text>
+  </g>
+</svg>

@@ -110,31 +110,31 @@
           "id": "package-types",
           "title": "封装形式分类",
           "file": "topics/01-package-types.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "materials",
           "title": "封装材料",
           "file": "topics/02-materials.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "equipment",
           "title": "设备",
           "file": "topics/03-equipment.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "reliability",
           "title": "可靠性测试",
           "file": "topics/04-reliability.json",
-          "status": "planned"
+          "status": "ready"
         },
         {
           "id": "glossary",
           "title": "行业术语",
           "file": "topics/05-glossary.json",
-          "status": "planned"
+          "status": "ready"
         }
       ]
     }

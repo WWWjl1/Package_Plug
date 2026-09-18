@@ -538,6 +538,186 @@
       "appearsIn": [
         "advanced/chiplet"
       ]
+    },
+    "pt.dimensions": {
+      "title": "分类的三个维度：引脚形态、组装方式、基板类型",
+      "appearsIn": [
+        "topics/package-types"
+      ]
+    },
+    "pt.evolution": {
+      "title": "通孔到表面贴装：每一代解开的是哪一个具体瓶颈",
+      "appearsIn": [
+        "topics/package-types"
+      ]
+    },
+    "pt.qfn-qfp": {
+      "title": "QFN 与 QFP：无引脚换来的面积与散热，代价是什么",
+      "appearsIn": [
+        "topics/package-types"
+      ]
+    },
+    "pt.bga": {
+      "title": "BGA 家族：PBGA / TBGA / CBGA / FCBGA 的四条分岔",
+      "appearsIn": [
+        "topics/package-types"
+      ]
+    },
+    "pt.csp": {
+      "title": "CSP 与 WLCSP 的边界：一个尺寸判据，和它守不住的边界",
+      "appearsIn": [
+        "topics/package-types"
+      ]
+    },
+    "pt.selection": {
+      "title": "选型决策：按约束倒推封装形式",
+      "appearsIn": [
+        "topics/package-types"
+      ]
+    },
+    "mt.cte": {
+      "title": "材料选型的第一性原理：让 CTE、模量、导热在同一个封装里协同",
+      "appearsIn": [
+        "topics/materials"
+      ]
+    },
+    "mt.tim": {
+      "title": "热界面材料：导热率阶梯与工艺温度阶梯的正面冲突",
+      "appearsIn": [
+        "topics/materials"
+      ]
+    },
+    "mt.interconnect": {
+      "title": "键合丝与凸点材料：铜丝为什么普及，Cu Pillar 为什么在细节距胜出",
+      "appearsIn": [
+        "topics/materials"
+      ]
+    },
+    "mt.substrate": {
+      "title": "基板材料：从 FR-4 到硅中介层，密度与成本的五个台阶",
+      "appearsIn": [
+        "topics/materials"
+      ]
+    },
+    "mt.imc": {
+      "title": "界面与 IMC：同一层材料，既是焊住的证据，也是脆化的来源",
+      "appearsIn": [
+        "topics/materials"
+      ]
+    },
+    "mt.failures": {
+      "title": "材料失效的五种通用模式：一张表看清材料、失效与对策",
+      "appearsIn": [
+        "topics/materials"
+      ]
+    },
+    "eq.taxonomy": {
+      "title": "设备分类：两条轴，以及后道为什么天生更拧巴",
+      "appearsIn": [
+        "topics/equipment"
+      ]
+    },
+    "eq.accuracy": {
+      "title": "精度是怎么来的：分辨率、定位精度、重复精度，究竟哪个决定良率",
+      "appearsIn": [
+        "topics/equipment"
+      ]
+    },
+    "eq.uph": {
+      "title": "节拍与产能：UPH 怎么算，瓶颈为什么几乎总在键合机",
+      "appearsIn": [
+        "topics/equipment"
+      ]
+    },
+    "eq.consumables": {
+      "title": "耗材经济学：寿命、成本分摊，以及为什么省耗材是最贵的省法",
+      "appearsIn": [
+        "topics/equipment"
+      ]
+    },
+    "eq.inspection": {
+      "title": "检测设备的分工：没有一种手段是万能的",
+      "appearsIn": [
+        "topics/equipment"
+      ]
+    },
+    "eq.window": {
+      "title": "设备与工艺窗口：为什么新设备装上不能直接用",
+      "appearsIn": [
+        "topics/equipment"
+      ]
+    },
+    "rl.why": {
+      "title": "为什么必须做可靠性测试：出厂电测到底拦不住什么",
+      "appearsIn": [
+        "topics/reliability"
+      ]
+    },
+    "rl.tc": {
+      "title": "温度循环：为什么它是封装的头号试验",
+      "appearsIn": [
+        "topics/reliability"
+      ]
+    },
+    "rl.hts": {
+      "title": "高温存储：150 °C 长烤到底在考什么",
+      "appearsIn": [
+        "topics/reliability"
+      ]
+    },
+    "rl.thb": {
+      "title": "湿热试验：偏压、水汽与电化学",
+      "appearsIn": [
+        "topics/reliability"
+      ]
+    },
+    "rl.mech": {
+      "title": "机械与板级可靠性：为什么必须在板子上测",
+      "appearsIn": [
+        "topics/reliability"
+      ]
+    },
+    "rl.accel": {
+      "title": "加速模型与寿命外推：边界与陷阱",
+      "appearsIn": [
+        "topics/reliability"
+      ]
+    },
+    "gl.confuse": {
+      "title": "三组最容易混用的词：先问「这个词的主语是谁」",
+      "appearsIn": [
+        "topics/glossary"
+      ]
+    },
+    "gl.interconnect": {
+      "title": "互连术语体系：先分层，再看谁包含谁",
+      "appearsIn": [
+        "topics/glossary"
+      ]
+    },
+    "gl.synonym": {
+      "title": "同义词陷阱：同一句话，两家公司指两道工序",
+      "appearsIn": [
+        "topics/glossary"
+      ]
+    },
+    "gl.quality": {
+      "title": "良率与质量：八个词分布在一条链上",
+      "appearsIn": [
+        "topics/glossary"
+      ]
+    },
+    "gl.standards": {
+      "title": "标准与规范：遇到问题该查哪一本",
+      "appearsIn": [
+        "topics/glossary"
+      ]
+    },
+    "gl.english": {
+      "title": "会场与产线口语：没有正式定义，但听不懂就插不上话",
+      "appearsIn": [
+        "topics/glossary"
+      ]
     }
   }
 }

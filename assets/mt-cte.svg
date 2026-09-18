@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="封装材料 CTE 对比与层叠结构失配位移示意">
+  <defs>
+    <linearGradient id="mtSie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <marker id="mtA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="24" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">① 主流封装材料的 CTE（ppm/K，室温）</text>
+  <text x="400" y="24" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">② 层叠结构与 CTE 失配位移</text>
+
+  <!-- ===== ① CTE 横向条形图：x0 = 152，8 px = 1 ppm/K，25 ppm/K = 200 px ===== -->
+  <!-- 参考线：硅 2.6 与 铜 17 -->
+  <line x1="173" y1="38" x2="173" y2="226" stroke="#e06c6c" stroke-width="1" stroke-dasharray="3 3" opacity="0.75"/>
+  <line x1="288" y1="38" x2="288" y2="226" stroke="#a76a3d" stroke-width="1" stroke-dasharray="3 3" opacity="0.75"/>
+  <text x="173" y="36" font-family="system-ui,sans-serif" font-size="9.5" fill="#e06c6c" text-anchor="middle">Si 2.6</text>
+  <text x="288" y="36" font-family="system-ui,sans-serif" font-size="9.5" fill="#a76a3d" text-anchor="middle">Cu 17</text>
+
+  <!-- 行 0 硅 -->
+  <text x="144" y="54" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">硅 Si</text>
+  <rect x="152" y="44" width="21" height="13" fill="#5d7699"/>
+  <text x="179" y="54" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">2.6</text>
+
+  <!-- 行 1 钨 / 氮化铝 -->
+  <text x="144" y="75" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">钨 W / 氮化铝 AlN</text>
+  <rect x="152" y="65" width="36" height="13" fill="#6f8f7a"/>
+  <text x="194" y="75" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">4.5</text>
+
+  <!-- 行 2 玻璃 -->
+  <text x="144" y="96" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">玻璃（成分可调）</text>
+  <rect x="176" y="86" width="40" height="13" fill="#7fb0c8"/>
+  <text x="222" y="96" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">3~8</text>
+
+  <!-- 行 3 EMC -->
+  <text x="144" y="117" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">EMC 塑封料</text>
+  <rect x="216" y="107" width="96" height="13" fill="#c9a227"/>
+  <text x="318" y="117" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">8~20</text>
+
+  <!-- 行 4 BT -->
+  <text x="144" y="138" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">BT 基板（面内）</text>
+  <rect x="152" y="128" width="112" height="13" fill="#b08d57"/>
+  <text x="270" y="138" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">14</text>
+
+  <!-- 行 5 铜 -->
+  <text x="144" y="159" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">铜 Cu</text>
+  <rect x="152" y="149" width="136" height="13" fill="#c98b5e"/>
+  <text x="294" y="159" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">17</text>
+
+  <!-- 行 6 FR-4 -->
+  <text x="144" y="180" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">FR-4（面内）</text>
+  <rect x="152" y="170" width="136" height="13" fill="#9a8f7a"/>
+  <text x="294" y="180" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">17</text>
+
+  <!-- 行 7 铝 -->
+  <text x="144" y="201" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">铝 Al</text>
+  <rect x="152" y="191" width="184" height="13" fill="#b6bcc6"/>
+  <text x="342" y="201" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">23</text>
+
+  <!-- 行 8 SAC -->
+  <text x="144" y="222" font-family="system-ui,sans-serif" font-size="11.5" fill="#3d4655" text-anchor="end">SAC305 焊料</text>
+  <rect x="320" y="212" width="24" height="13" fill="#8fa3bb"/>
+  <text x="350" y="222" font-family="system-ui,sans-serif" font-size="10.5" fill="#6b7686">21~24</text>
+
+  <!-- 坐标轴 -->
+  <line x1="152" y1="234" x2="356" y2="234" stroke="#9aa7b8" stroke-width="1.2"/>
+  <g stroke="#9aa7b8" stroke-width="1">
+    <line x1="152" y1="234" x2="152" y2="238"/>
+    <line x1="192" y1="234" x2="192" y2="238"/>
+    <line x1="232" y1="234" x2="232" y2="238"/>
+    <line x1="272" y1="234" x2="272" y2="238"/>
+    <line x1="312" y1="234" x2="312" y2="238"/>
+    <line x1="352" y1="234" x2="352" y2="238"/>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="10" fill="#8b97a8" text-anchor="middle">
+    <text x="152" y="250">0</text>
+    <text x="192" y="250">5</text>
+    <text x="232" y="250">10</text>
+    <text x="272" y="250">15</text>
+    <text x="312" y="250">20</text>
+    <text x="352" y="250">25</text>
+  </g>
+
+  <text x="24" y="272" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">注：EMC 的 CTE 由填料含量决定（70~90 wt% 二氧化硅），</text>
+  <text x="24" y="288" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">Tg 以上会跳到 30~50 ppm/K（图中未画）。</text>
+  <text x="24" y="306" font-family="system-ui,sans-serif" font-size="11" fill="#8b97a8">FR-4 / BT 的 z 向 CTE 约 50~70，远大于面内值。</text>
+
+  <!-- ===== ② 层叠结构 ===== -->
+  <rect x="420" y="44" width="270" height="20" fill="#cfd8e6" stroke="#93a1b5" stroke-width="1"/>
+  <text x="555" y="58" font-family="system-ui,sans-serif" font-size="11" fill="#3d4655" text-anchor="middle">塑封料 EMC　CTE 8~20</text>
+
+  <rect x="420" y="64" width="270" height="50" fill="url(#mtSie)" stroke="#4a5666" stroke-width="1.5"/>
+  <text x="555" y="94" font-family="system-ui,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">硅芯片 Si　CTE 2.6</text>
+
+  <rect x="420" y="114" width="270" height="16" fill="#aab3bf" stroke="#7d8794" stroke-width="1"/>
+  <text x="555" y="126" font-family="system-ui,sans-serif" font-size="10.5" fill="#25303d" text-anchor="middle">装片层（银浆 / 焊料 / 烧结银）</text>
+
+  <rect x="420" y="130" width="270" height="34" fill="#c98b5e" stroke="#8f5c33" stroke-width="1.5"/>
+  <text x="555" y="152" font-family="system-ui,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">铜引线框架 Cu　CTE 17</text>
+
+  <rect x="420" y="164" width="270" height="18" fill="#cfd8e6" stroke="#93a1b5" stroke-width="1"/>
+  <text x="555" y="177" font-family="system-ui,sans-serif" font-size="11" fill="#3d4655" text-anchor="middle">塑封料 EMC</text>
+
+  <line x1="420" y1="200" x2="690" y2="200" stroke="#9aa7b8" stroke-width="1.2" marker-start="url(#mtA)" marker-end="url(#mtA)"/>
+  <text x="555" y="194" font-family="system-ui,sans-serif" font-size="10.5" fill="#8b97a8" text-anchor="middle">L = 5 mm</text>
+
+  <text x="400" y="218" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">Δα(Si-Cu) = 17 - 2.6 = 14.4 ppm/K</text>
+  <text x="400" y="235" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">ΔT = 175 → 25 °C = 150 K，L = 5 mm</text>
+  <text x="400" y="256" font-family="system-ui,sans-serif" font-size="12.5" font-weight="600" fill="#e06c6c">ΔL = Δα · ΔT · L ≈ 10.8 μm</text>
+  <text x="400" y="276" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">界面剪切应变 γ ≈ ΔL / BLT = 10.8 / 25 ≈ 43%</text>
+  <text x="400" y="293" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">远超环氧弹性极限（约 1%）→ 装片层始终</text>
+  <text x="400" y="309" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">工作在塑性 / 蠕变区</text>
+
+  <text x="400" y="326" font-family="system-ui,sans-serif" font-size="10.5" fill="#8b97a8">注：失配应力看相邻层之差 Δα，与单层 CTE 的绝对值无关。</text>
+</svg>

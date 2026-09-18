@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="Arrhenius 加速因子曲线：基准 55 摄氏度，三条不同激活能曲线">
+  <defs>
+    <marker id="rlArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="24" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">Arrhenius 加速因子：基准温度 55 °C，纵轴为对数刻度</text>
+
+  <!-- 纵轴刻度网格 -->
+  <line x1="90" y1="199.7" x2="740" y2="199.7" stroke="#dfe5ee" stroke-width="1" stroke-dasharray="4 5"/>
+  <line x1="90" y1="129.4" x2="740" y2="129.4" stroke="#dfe5ee" stroke-width="1" stroke-dasharray="4 5"/>
+  <line x1="90" y1="59.1" x2="740" y2="59.1" stroke="#dfe5ee" stroke-width="1" stroke-dasharray="4 5"/>
+  <text x="84" y="203" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8" text-anchor="end">10×</text>
+  <text x="84" y="133" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8" text-anchor="end">100×</text>
+  <text x="84" y="63" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8" text-anchor="end">1000×</text>
+
+  <!-- 横轴刻度网格 -->
+  <line x1="295.3" y1="46" x2="295.3" y2="270" stroke="#dfe5ee" stroke-width="1" stroke-dasharray="4 5"/>
+  <line x1="568.9" y1="46" x2="568.9" y2="270" stroke="#4a8fd0" stroke-width="1.1" stroke-dasharray="5 4"/>
+
+  <!-- 坐标轴 -->
+  <line x1="90" y1="270" x2="90" y2="42" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#rlArrow)"/>
+  <line x1="90" y1="270" x2="752" y2="270" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#rlArrow)"/>
+  <text x="26" y="52" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">加速因子</text>
+  <text x="30" y="68" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">AF</text>
+
+  <!-- 三条曲线：Ea = 0.4 / 0.7 / 0.9 eV -->
+  <path d="M90,270 L192.6,251.1 L295.3,233.8 L397.9,217.9 L500.5,203.2 L603.2,189.6 L740,172.9" fill="none" stroke="#4a8fd0" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M90,270 L192.6,236.9 L295.3,206.6 L397.9,178.8 L500.5,153.0 L603.2,129.3 L740,100.1" fill="none" stroke="#c9a227" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M90,270 L192.6,227.5 L295.3,188.5 L397.9,152.7 L500.5,119.6 L603.2,89.0 L740,51.6" fill="none" stroke="#e06c6c" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- 曲线标注 -->
+  <text x="700" y="166" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#4a8fd0" text-anchor="end">Ea = 0.4 eV</text>
+  <text x="700" y="94" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#c9a227" text-anchor="end">Ea = 0.7 eV</text>
+  <text x="700" y="46" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#e06c6c" text-anchor="end">Ea = 0.9 eV</text>
+
+  <!-- 关键读数标注 -->
+  <text x="424" y="238" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">125 °C：Ea 0.7 → AF 约 78　·　Ea 0.9 → AF 约 271</text>
+  <text x="424" y="257" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">150 °C：Ea 0.4 → AF 约 24　·　Ea 0.9 → AF 约 1278</text>
+
+  <!-- 横轴标注 -->
+  <text x="90" y="288" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8" text-anchor="middle">55</text>
+  <text x="295.3" y="288" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8" text-anchor="middle">85</text>
+  <text x="397.9" y="288" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8" text-anchor="middle">100</text>
+  <text x="568.9" y="288" font-family="system-ui,sans-serif" font-size="11.5" fill="#4a8fd0" text-anchor="middle">125</text>
+  <text x="740" y="288" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8" text-anchor="middle">150</text>
+  <text x="748" y="306" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8" text-anchor="end">应力温度 T_stress（°C）</text>
+
+  <text x="24" y="306" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">AF = exp[ (Ea / k) × ( 1 / T_use − 1 / T_stress ) ]，k = 8.617 × 10⁻⁵ eV/K，温度用开尔文。</text>
+  <text x="24" y="322" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">同温度下 Ea 从 0.4 抬到 0.9 eV，150 °C 的加速倍数从约 24 倍跳到约 1278 倍——加速倍数属于机理，不属于试验箱。</text>
+</svg>
