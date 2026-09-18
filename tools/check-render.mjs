@@ -27,6 +27,9 @@ const REAL = ROOT
 const TMP = join(ROOT, '.tmp-check/render')
 const SID = 'render-test-session'
 let failed = 0
+// 脚本可能中途 process.exit（比如渲染崩了），那就走不到最后的 rmSync。
+// 挂一个退出钩子，保证临时目录不残留。
+process.on('exit', () => { try { rmSync(TMP, { recursive: true, force: true }) } catch (error) { /* 已经没了 */ } })
 const fail = (m) => { failed += 1; console.log('  x ' + m) }
 const ok = (m) => console.log('  . ' + m)
 

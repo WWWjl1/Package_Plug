@@ -24,6 +24,8 @@ const CHECKS = [
 // 清掉上次可能残留的临时目录（脚本正常结束时会自己删，异常退出可能留下）
 const tmp = join(ROOT, '.tmp-check')
 if (existsSync(tmp)) rmSync(tmp, { recursive: true, force: true })
+// 收尾再把外层目录也删掉（各脚本只删自己那一层）
+process.on('exit', () => { try { rmSync(tmp, { recursive: true, force: true }) } catch (error) { /* 已经没了 */ } })
 
 const bar = '='.repeat(64)
 const failed = []

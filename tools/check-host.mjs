@@ -202,6 +202,8 @@ console.log('')
 console.log('=== 9. C3 forget-session：只在确实是同一个失效 id 时才清 ===')
 // 用 config.root 挂到一个临时目录上测，绝不碰你真实的 progress/session.json
 const TMP = join(ROOT, '.tmp-check/host')
+// 脚本可能中途退出，走不到最后的 rmSync —— 挂退出钩子保证临时目录不残留
+process.on('exit', () => { try { rmSync(TMP, { recursive: true, force: true }) } catch (error) { /* 已经没了 */ } })
 mkdirSync(join(TMP, 'progress'), { recursive: true })
 writeFileSync(join(TMP, 'progress/session.json'), JSON.stringify({ version: 1, sessionId: 'live-session-abc' }), 'utf8')
 let tmpRoute = null
