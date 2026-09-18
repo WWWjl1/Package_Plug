@@ -220,12 +220,17 @@ cmd /c mklink /J "$profile\node_modules\dsh-package-learn" "$src"
 
 进度存在 `progress/`（**本机私有，不进仓库**）：
 
-- `state.json` —— 每个知识点的状态（未学 / 在学 / 已掌握）
+- `state.json` —— 每个知识点的状态（未学 / 在学 / 已掌握）+ 复习记录
 - `quiz.json` —— 小测作答流水 + 错题本
 - `session.json` —— 固定学习会话的 id
 - `ui.json` —— 界面状态
+- `backups/<时间戳>/` —— 导入进度前的自动备份
 
 想清空重来，删掉前两个即可。细节见 [`progress/README.md`](progress/README.md)。
+
+**备份与迁移**：顶栏 **进度备份** 可以一键把进度导出成一个 JSON 文件，也可以从文件导回来
+（换电脑、重装、怕丢）。导入会覆盖当前进度，但**覆盖前一定先自动备份**到
+`progress/backups/<时间戳>/`；连备份都写不成功就拒绝导入，坏数据整包拒掉、一个字都不写盘。
 
 ---
 

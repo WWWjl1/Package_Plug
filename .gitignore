@@ -8,6 +8,8 @@ progress/state.json
 progress/quiz.json
 progress/session.json
 progress/ui.json
+# E1 导入进度前自动留下的备份（同样是个人数据）
+progress/backups/
 
 # 系统与编辑器杂物
 Thumbs.db
