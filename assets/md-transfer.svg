@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="传递注塑塑封工艺示意图">
+  <defs>
+    <linearGradient id="dieG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <linearGradient id="lfG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d8b9e"/>
+      <stop offset="1" stop-color="#59657a"/>
+    </linearGradient>
+    <linearGradient id="moldG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a6577"/>
+      <stop offset="1" stop-color="#434d5c"/>
+    </linearGradient>
+    <linearGradient id="pelletG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0c987"/>
+      <stop offset="1" stop-color="#d9a441"/>
+    </linearGradient>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+    <marker id="arwF" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c8901f"/>
+    </marker>
+  </defs>
+
+  <!-- 图例：熔体流动方向 -->
+  <path d="M556,20 L590,20" fill="none" stroke="#c8901f" stroke-width="3" marker-end="url(#arwF)"/>
+  <text x="600" y="24" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#96702a">熔体流动方向 Melt Flow</text>
+
+  <!-- 上模 -->
+  <rect x="40" y="35" width="700" height="100" rx="4" fill="url(#moldG)" stroke="#333c48" stroke-width="1.5"/>
+  <text x="218" y="104" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#dbe3ee">上模 Upper Mold</text>
+  <text x="722" y="128" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#b9c4d3" text-anchor="end">分型面 Parting Line</text>
+
+  <!-- 料筒、柱塞、料饼 -->
+  <rect x="90" y="35" width="110" height="100" fill="#eef2f7" stroke="#c3ccd8" stroke-width="1"/>
+  <rect x="96" y="38" width="98" height="44" fill="#8b97a8" stroke="#6c7788" stroke-width="1"/>
+  <path d="M138,44 L152,44 L152,64 L160,64 L145,78 L130,64 L138,64 Z" fill="#eef2f7"/>
+  <rect x="96" y="86" width="98" height="46" fill="url(#pelletG)" stroke="#b8862c" stroke-width="1"/>
+  <text x="145" y="115" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#6b4a10" text-anchor="middle">料饼</text>
+  <line x1="212" y1="60" x2="198" y2="60" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#arw)"/>
+  <text x="218" y="64" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#dbe3ee">柱塞 Plunger（往下压）</text>
+
+  <!-- 分型面 -->
+  <line x1="40" y1="135" x2="740" y2="135" stroke="#8f9bab" stroke-width="1.2" stroke-dasharray="6 5"/>
+
+  <!-- 下模 -->
+  <rect x="40" y="135" width="700" height="130" rx="4" fill="url(#moldG)" stroke="#333c48" stroke-width="1.5"/>
+  <text x="52" y="252" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#dbe3ee">下模 Lower Mold</text>
+
+  <!-- 流道 -->
+  <rect x="140" y="135" width="115" height="24" fill="#eef2f7" stroke="#c3ccd8" stroke-width="1"/>
+  <!-- 浇口 -->
+  <rect x="255" y="141" width="17" height="12" fill="#eef2f7" stroke="#c3ccd8" stroke-width="1"/>
+  <!-- 模腔 -->
+  <rect x="272" y="135" width="438" height="88" fill="#eef2f7" stroke="#c3ccd8" stroke-width="1"/>
+
+  <!-- 熔体流动箭头 -->
+  <path d="M150,147 L186,147" fill="none" stroke="#c8901f" stroke-width="2.5" marker-end="url(#arwF)"/>
+  <path d="M228,147 L250,147" fill="none" stroke="#c8901f" stroke-width="2.5" marker-end="url(#arwF)"/>
+  <path d="M282,147 L326,147" fill="none" stroke="#c8901f" stroke-width="2.5" marker-end="url(#arwF)"/>
+  <path d="M400,147 L444,147" fill="none" stroke="#c8901f" stroke-width="2.5" marker-end="url(#arwF)"/>
+  <path d="M508,147 L552,147" fill="none" stroke="#c8901f" stroke-width="2.5" marker-end="url(#arwF)"/>
+
+  <!-- 引线框架 与 芯片 -->
+  <rect x="280" y="205" width="420" height="14" rx="2" fill="url(#lfG)" stroke="#4a5666" stroke-width="1"/>
+  <rect x="360" y="172" width="150" height="33" rx="2" fill="url(#dieG)" stroke="#4a5666" stroke-width="1.5"/>
+  <text x="435" y="193" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">芯片 Die</text>
+
+  <!-- 键合线（正常） -->
+  <path d="M372,171 C 340,152 312,164 292,203" fill="none" stroke="#d9a441" stroke-width="3" stroke-linecap="round"/>
+  <path d="M390,171 C 362,160 336,169 322,203" fill="none" stroke="#d9a441" stroke-width="3" stroke-linecap="round"/>
+  <path d="M470,171 C 496,156 516,164 532,203" fill="none" stroke="#d9a441" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 键合线（被冲弯：虚线为原始位置，实线为冲丝后位置） -->
+  <path d="M500,171 C 524,157 542,164 558,203" fill="none" stroke="#b08a3a" stroke-width="2" stroke-dasharray="5 4"/>
+  <path d="M500,171 C 548,146 592,158 558,203" fill="none" stroke="#e05c4a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 底部标注 -->
+  <line x1="105" y1="284" x2="200" y2="160" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#arw)"/>
+  <text x="52" y="290" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#8b97a8">流道 Runner</text>
+  <line x1="258" y1="284" x2="263" y2="152" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#arw)"/>
+  <text x="222" y="290" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#8b97a8">浇口 Gate</text>
+  <line x1="470" y1="284" x2="572" y2="160" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#arw)"/>
+  <text x="392" y="290" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#8b97a8">冲丝 Wire Sweep</text>
+
+  <line x1="60" y1="308" x2="300" y2="213" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#arw)"/>
+  <text x="52" y="316" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#8b97a8">引线框架 Leadframe</text>
+  <line x1="256" y1="308" x2="358" y2="196" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#arw)"/>
+  <text x="248" y="316" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#8b97a8">芯片 Die</text>
+  <line x1="620" y1="308" x2="690" y2="200" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#arw)"/>
+  <text x="556" y="316" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#8b97a8">模腔 Cavity</text>
+</svg>

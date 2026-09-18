@@ -2,17 +2,326 @@
   "version": 1,
   "note": "知识点库。每个细分点一个全局唯一 id。同一个知识点如果出现在多条线（比如传统封装和先进封装里都有「塑封材料」），就在这里用同一个 id 登记多次，进度自动互通。",
   "points": {
-    "wt.why": { "title": "为什么必须减薄", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["advanced/tsv", "topics/materials"] },
-    "wt.grind": { "title": "磨削减薄：砂轮与参数", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["topics/equipment"] },
-    "wt.stress": { "title": "亚表面损伤与应力释放", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["topics/reliability"] },
-    "wt.methods": { "title": "减薄手段全景：Taiko / DBG / 临时键合", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["traditional/dicing", "advanced/tsv"] },
-    "wt.defects": { "title": "减薄的典型缺陷与失效", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["topics/reliability"] },
-    "wt.metrology": { "title": "厚度与形状指标：TTV / Bow / Warp", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["topics/glossary"] },
-    "wb.principle": { "title": "键合原理", "appearsIn": ["traditional/wire-bonding"] },
-    "wb.materials": { "title": "丝材选择", "appearsIn": ["traditional/wire-bonding"], "relatedTo": ["topics/materials"] },
-    "wb.machine": { "title": "键合机与劈刀", "appearsIn": ["traditional/wire-bonding"], "relatedTo": ["topics/equipment"] },
-    "wb.params": { "title": "工艺参数与流程", "appearsIn": ["traditional/wire-bonding"] },
-    "wb.defects": { "title": "常见缺陷与失效分析", "appearsIn": ["traditional/wire-bonding"], "relatedTo": ["topics/reliability"] },
-    "wb.advanced": { "title": "可靠性验证与先进键合趋势", "appearsIn": ["traditional/wire-bonding"], "relatedTo": ["topics/reliability", "advanced/bumping"] }
+    "wt.why": {
+      "title": "为什么必须减薄",
+      "appearsIn": [
+        "traditional/wafer-thinning"
+      ],
+      "relatedTo": [
+        "advanced/tsv",
+        "topics/materials"
+      ]
+    },
+    "wt.grind": {
+      "title": "磨削减薄：砂轮与参数",
+      "appearsIn": [
+        "traditional/wafer-thinning"
+      ],
+      "relatedTo": [
+        "topics/equipment"
+      ]
+    },
+    "wt.stress": {
+      "title": "亚表面损伤与应力释放",
+      "appearsIn": [
+        "traditional/wafer-thinning"
+      ],
+      "relatedTo": [
+        "topics/reliability"
+      ]
+    },
+    "wt.methods": {
+      "title": "减薄手段全景：Taiko / DBG / 临时键合",
+      "appearsIn": [
+        "traditional/wafer-thinning"
+      ],
+      "relatedTo": [
+        "traditional/dicing",
+        "advanced/tsv"
+      ]
+    },
+    "wt.defects": {
+      "title": "减薄的典型缺陷与失效",
+      "appearsIn": [
+        "traditional/wafer-thinning"
+      ],
+      "relatedTo": [
+        "topics/reliability"
+      ]
+    },
+    "wt.metrology": {
+      "title": "厚度与形状指标：TTV / Bow / Warp",
+      "appearsIn": [
+        "traditional/wafer-thinning"
+      ],
+      "relatedTo": [
+        "topics/glossary"
+      ]
+    },
+    "wb.principle": {
+      "title": "键合原理",
+      "appearsIn": [
+        "traditional/wire-bonding"
+      ]
+    },
+    "wb.materials": {
+      "title": "丝材选择",
+      "appearsIn": [
+        "traditional/wire-bonding"
+      ],
+      "relatedTo": [
+        "topics/materials"
+      ]
+    },
+    "wb.machine": {
+      "title": "键合机与劈刀",
+      "appearsIn": [
+        "traditional/wire-bonding"
+      ],
+      "relatedTo": [
+        "topics/equipment"
+      ]
+    },
+    "wb.params": {
+      "title": "工艺参数与流程",
+      "appearsIn": [
+        "traditional/wire-bonding"
+      ]
+    },
+    "wb.defects": {
+      "title": "常见缺陷与失效分析",
+      "appearsIn": [
+        "traditional/wire-bonding"
+      ],
+      "relatedTo": [
+        "topics/reliability"
+      ]
+    },
+    "wb.advanced": {
+      "title": "可靠性验证与先进键合趋势",
+      "appearsIn": [
+        "traditional/wire-bonding"
+      ],
+      "relatedTo": [
+        "topics/reliability",
+        "advanced/bumping"
+      ]
+    },
+    "dc.overview": {
+      "title": "划片在做什么：四条路线的适用边界",
+      "appearsIn": [
+        "traditional/dicing"
+      ]
+    },
+    "dc.blade": {
+      "title": "刀轮划片：参数怎么定，为什么必须过切",
+      "appearsIn": [
+        "traditional/dicing"
+      ]
+    },
+    "dc.chipping": {
+      "title": "崩边与微裂纹：为什么它是良率杀手",
+      "appearsIn": [
+        "traditional/dicing"
+      ]
+    },
+    "dc.street": {
+      "title": "划片道与设计规则：那条窄带是怎么定出来的",
+      "appearsIn": [
+        "traditional/dicing"
+      ]
+    },
+    "dc.dbg": {
+      "title": "DBG 与隐形切割：把工序顺序颠倒过来",
+      "appearsIn": [
+        "traditional/dicing"
+      ]
+    },
+    "dc.inspection": {
+      "title": "划片质量检测与常见失效",
+      "appearsIn": [
+        "traditional/dicing"
+      ]
+    },
+    "da.triple": {
+      "title": "装片要同时解决三件事：机械固定、热通路、电连接",
+      "appearsIn": [
+        "traditional/die-attach"
+      ]
+    },
+    "da.materials": {
+      "title": "材料路线全景：银浆、DAF、共晶、焊料、烧结银",
+      "appearsIn": [
+        "traditional/die-attach"
+      ]
+    },
+    "da.void": {
+      "title": "空洞率：为什么它是装片最关键的指标",
+      "appearsIn": [
+        "traditional/die-attach"
+      ]
+    },
+    "da.placement": {
+      "title": "贴装精度与力控：偏移、压力、崩边与隐裂",
+      "appearsIn": [
+        "traditional/die-attach"
+      ]
+    },
+    "da.cure": {
+      "title": "固化与回流工艺窗口：温度曲线、残余应力与吸湿",
+      "appearsIn": [
+        "traditional/die-attach"
+      ]
+    },
+    "da.defects": {
+      "title": "装片缺陷与失效：分层、空洞、偏移、溢胶、开裂",
+      "appearsIn": [
+        "traditional/die-attach"
+      ]
+    },
+    "md.roles": {
+      "title": "塑封到底在干什么：四个作用，以及它自己的代价",
+      "appearsIn": [
+        "traditional/molding"
+      ]
+    },
+    "md.emc": {
+      "title": "塑封料 EMC 的成分：70~90 wt% 的二氧化硅决定了几乎所有性能",
+      "appearsIn": [
+        "traditional/molding"
+      ]
+    },
+    "md.transfer": {
+      "title": "传递注塑：为什么是「挤牙膏」而不是「注塑」",
+      "appearsIn": [
+        "traditional/molding"
+      ]
+    },
+    "md.sweep": {
+      "title": "冲丝（Wire Sweep）：塑封与键合的耦合点，用一根梁算清楚",
+      "appearsIn": [
+        "traditional/molding"
+      ]
+    },
+    "md.popcorn": {
+      "title": "吸湿与爆米花效应：为什么拆封后必须烘烤",
+      "appearsIn": [
+        "traditional/molding"
+      ]
+    },
+    "md.warpage": {
+      "title": "翘曲与 CTE 匹配：为什么封装天生是弯的",
+      "appearsIn": [
+        "traditional/molding"
+      ]
+    },
+    "bm.why": {
+      "title": "为什么要有焊球：从 QFP 到 BGA 的演进逻辑",
+      "appearsIn": [
+        "traditional/ball-mount"
+      ]
+    },
+    "bm.bumping": {
+      "title": "球怎么做上去：四种成球工艺与它们的节距边界",
+      "appearsIn": [
+        "traditional/ball-mount"
+      ]
+    },
+    "bm.reflow": {
+      "title": "回流焊温度曲线：四段各解决什么问题",
+      "appearsIn": [
+        "traditional/ball-mount"
+      ]
+    },
+    "bm.pitch": {
+      "title": "球径、节距与共面性：三个被锁死的数",
+      "appearsIn": [
+        "traditional/ball-mount"
+      ]
+    },
+    "bm.defects": {
+      "title": "常见缺陷：桥连、空洞、掉球、球径偏差与枕头效应",
+      "appearsIn": [
+        "traditional/ball-mount"
+      ]
+    },
+    "bm.inspection": {
+      "title": "检测与可靠性：AOI / X-ray 分层，以及焊点为什么会断",
+      "appearsIn": [
+        "traditional/ball-mount"
+      ]
+    },
+    "sg.why": {
+      "title": "一道被低估的工序：切筋成型到底在解决什么",
+      "appearsIn": [
+        "traditional/singulation"
+      ]
+    },
+    "sg.leadframe": {
+      "title": "引线框架：一颗芯片的骨架，和它身上的五种镀层",
+      "appearsIn": [
+        "traditional/singulation"
+      ]
+    },
+    "sg.trim": {
+      "title": "切筋：间隙决定毛刺，毛刺决定焊接",
+      "appearsIn": [
+        "traditional/singulation"
+      ]
+    },
+    "sg.form": {
+      "title": "成型：弯多少度、回弹多少、共面性怎么判",
+      "appearsIn": [
+        "traditional/singulation"
+      ]
+    },
+    "sg.variants": {
+      "title": "不同封装形态怎么切：冲切、刀片、激光的分工",
+      "appearsIn": [
+        "traditional/singulation"
+      ]
+    },
+    "sg.defects": {
+      "title": "缺陷与失效：从现象倒推到过程变量",
+      "appearsIn": [
+        "traditional/singulation"
+      ]
+    },
+    "ts.levels": {
+      "title": "测试的分级与站位：CP、FT、SLT、Burn-in 各自拦什么、拦不住什么",
+      "appearsIn": [
+        "traditional/test"
+      ]
+    },
+    "ts.content": {
+      "title": "测什么：从开短路到参数测试，以及测试向量是怎么来的",
+      "appearsIn": [
+        "traditional/test"
+      ]
+    },
+    "ts.whyft": {
+      "title": "为什么封装后还要再测：把封装引入的失效逐个点名，并算清逃逸的代价",
+      "appearsIn": [
+        "traditional/test"
+      ]
+    },
+    "ts.burnin": {
+      "title": "老化筛选与浴盆曲线：为什么「测过」不等于「活得过」",
+      "appearsIn": [
+        "traditional/test"
+      ]
+    },
+    "ts.binning": {
+      "title": "分选、打标与 bin 分布：良率数字背后的工艺真相",
+      "appearsIn": [
+        "traditional/test"
+      ]
+    },
+    "ts.econ": {
+      "title": "测试的成本经济学：时间就是钱，覆盖率不是越高越好",
+      "appearsIn": [
+        "traditional/test"
+      ]
+    }
   }
 }

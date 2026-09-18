@@ -8,14 +8,54 @@
       "title": "传统封装流程",
       "hint": "芯片级：先把晶圆切成一颗颗芯片，再逐颗组装",
       "processes": [
-        { "id": "wafer-thinning", "title": "晶圆减薄", "file": "traditional/01-wafer-thinning.json", "status": "ready" },
-        { "id": "dicing", "title": "划片", "file": "traditional/02-dicing.json", "status": "planned" },
-        { "id": "die-attach", "title": "装片", "file": "traditional/03-die-attach.json", "status": "planned" },
-        { "id": "wire-bonding", "title": "引线键合", "file": "traditional/04-wire-bonding.json", "status": "ready" },
-        { "id": "molding", "title": "塑封", "file": "traditional/05-molding.json", "status": "planned" },
-        { "id": "ball-mount", "title": "植球", "file": "traditional/06-ball-mount.json", "status": "planned" },
-        { "id": "singulation", "title": "切筋成型", "file": "traditional/07-singulation.json", "status": "planned" },
-        { "id": "test", "title": "测试", "file": "traditional/08-test.json", "status": "planned" }
+        {
+          "id": "wafer-thinning",
+          "title": "晶圆减薄",
+          "file": "traditional/01-wafer-thinning.json",
+          "status": "ready"
+        },
+        {
+          "id": "dicing",
+          "title": "划片",
+          "file": "traditional/02-dicing.json",
+          "status": "ready"
+        },
+        {
+          "id": "die-attach",
+          "title": "装片",
+          "file": "traditional/03-die-attach.json",
+          "status": "ready"
+        },
+        {
+          "id": "wire-bonding",
+          "title": "引线键合",
+          "file": "traditional/04-wire-bonding.json",
+          "status": "ready"
+        },
+        {
+          "id": "molding",
+          "title": "塑封",
+          "file": "traditional/05-molding.json",
+          "status": "ready"
+        },
+        {
+          "id": "ball-mount",
+          "title": "植球",
+          "file": "traditional/06-ball-mount.json",
+          "status": "ready"
+        },
+        {
+          "id": "singulation",
+          "title": "切筋成型",
+          "file": "traditional/07-singulation.json",
+          "status": "ready"
+        },
+        {
+          "id": "test",
+          "title": "测试",
+          "file": "traditional/08-test.json",
+          "status": "ready"
+        }
       ]
     },
     {
@@ -23,12 +63,42 @@
       "title": "先进封装",
       "hint": "晶圆级：在整片晶圆上就做完大部分工序，顺序与传统封装完全不同",
       "processes": [
-        { "id": "bumping", "title": "Bumping 凸点", "file": "advanced/01-bumping.json", "status": "planned" },
-        { "id": "wlcsp", "title": "WLCSP", "file": "advanced/02-wlcsp.json", "status": "planned" },
-        { "id": "fan-out", "title": "Fan-out 扇出", "file": "advanced/03-fan-out.json", "status": "planned" },
-        { "id": "tsv", "title": "TSV 硅通孔", "file": "advanced/04-tsv.json", "status": "planned" },
-        { "id": "stacking", "title": "2.5D / 3D 堆叠", "file": "advanced/05-stacking.json", "status": "planned" },
-        { "id": "chiplet", "title": "Chiplet 芯粒", "file": "advanced/06-chiplet.json", "status": "planned" }
+        {
+          "id": "bumping",
+          "title": "Bumping 凸点",
+          "file": "advanced/01-bumping.json",
+          "status": "planned"
+        },
+        {
+          "id": "wlcsp",
+          "title": "WLCSP",
+          "file": "advanced/02-wlcsp.json",
+          "status": "planned"
+        },
+        {
+          "id": "fan-out",
+          "title": "Fan-out 扇出",
+          "file": "advanced/03-fan-out.json",
+          "status": "planned"
+        },
+        {
+          "id": "tsv",
+          "title": "TSV 硅通孔",
+          "file": "advanced/04-tsv.json",
+          "status": "planned"
+        },
+        {
+          "id": "stacking",
+          "title": "2.5D / 3D 堆叠",
+          "file": "advanced/05-stacking.json",
+          "status": "planned"
+        },
+        {
+          "id": "chiplet",
+          "title": "Chiplet 芯粒",
+          "file": "advanced/06-chiplet.json",
+          "status": "planned"
+        }
       ]
     },
     {
@@ -36,11 +106,36 @@
       "title": "专题模块",
       "hint": "横着切：不按流程走，按知识类别学",
       "processes": [
-        { "id": "package-types", "title": "封装形式分类", "file": "topics/01-package-types.json", "status": "planned" },
-        { "id": "materials", "title": "封装材料", "file": "topics/02-materials.json", "status": "planned" },
-        { "id": "equipment", "title": "设备", "file": "topics/03-equipment.json", "status": "planned" },
-        { "id": "reliability", "title": "可靠性测试", "file": "topics/04-reliability.json", "status": "planned" },
-        { "id": "glossary", "title": "行业术语", "file": "topics/05-glossary.json", "status": "planned" }
+        {
+          "id": "package-types",
+          "title": "封装形式分类",
+          "file": "topics/01-package-types.json",
+          "status": "planned"
+        },
+        {
+          "id": "materials",
+          "title": "封装材料",
+          "file": "topics/02-materials.json",
+          "status": "planned"
+        },
+        {
+          "id": "equipment",
+          "title": "设备",
+          "file": "topics/03-equipment.json",
+          "status": "planned"
+        },
+        {
+          "id": "reliability",
+          "title": "可靠性测试",
+          "file": "topics/04-reliability.json",
+          "status": "planned"
+        },
+        {
+          "id": "glossary",
+          "title": "行业术语",
+          "file": "topics/05-glossary.json",
+          "status": "planned"
+        }
       ]
     }
   ],

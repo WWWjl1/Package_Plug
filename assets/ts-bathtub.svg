@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="浴盆曲线与老化筛选窗口">
+  <defs>
+    <linearGradient id="tsEarly" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e06c6c" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#e06c6c" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="tsWear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a227" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#c9a227" stop-opacity="0.04"/>
+    </linearGradient>
+    <marker id="tsArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="24" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">浴盆曲线（Bathtub Curve）：三段失效机理完全不同</text>
+
+  <!-- 三段区域 -->
+  <path d="M78,270 L78,58 C118,120 150,178 250,200 L250,270 Z" fill="url(#tsEarly)"/>
+  <path d="M250,270 L250,200 L480,202 L480,270 Z" fill="#dfe5ee" opacity="0.35"/>
+  <path d="M480,270 L480,202 C590,204 660,180 728,62 L728,270 Z" fill="url(#tsWear)"/>
+
+  <!-- 坐标轴 -->
+  <line x1="70" y1="270" x2="70" y2="44" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tsArrow)"/>
+  <line x1="70" y1="270" x2="744" y2="270" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#tsArrow)"/>
+  <text x="26" y="46" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">失效率</text>
+  <text x="30" y="62" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">λ(t)</text>
+
+  <!-- 区段分界线 -->
+  <line x1="250" y1="46" x2="250" y2="270" stroke="#4a8fd0" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <line x1="480" y1="46" x2="480" y2="270" stroke="#c9a227" stroke-width="1.2" stroke-dasharray="5 4"/>
+
+  <!-- 浴盆曲线 -->
+  <path d="M78,58 C118,120 150,178 250,200 L480,202 C590,204 660,180 728,62" fill="none" stroke="#5d7699" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ① 早期失效期 -->
+  <text x="135" y="100" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#e06c6c">① 早期失效期</text>
+  <text x="135" y="118" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">工艺缺陷、污染、虚焊、微裂纹</text>
+  <text x="135" y="136" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">Weibull 形状参数 β &lt; 1</text>
+
+  <!-- ② 有用寿命期 -->
+  <text x="272" y="150" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#5d7699">② 有用寿命期</text>
+  <text x="272" y="168" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">失效率近似常数，β ≈ 1（指数分布）</text>
+
+  <!-- ③ 耗损期 -->
+  <text x="498" y="86" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#c9a227">③ 耗损期</text>
+  <text x="498" y="104" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">电迁移、TDDB、焊点疲劳</text>
+  <text x="498" y="122" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">Weibull 形状参数 β &gt; 1</text>
+
+  <!-- 老化筛选窗口 -->
+  <line x1="84" y1="246" x2="244" y2="246" stroke="#e06c6c" stroke-width="1.4"/>
+  <line x1="84" y1="240" x2="84" y2="252" stroke="#e06c6c" stroke-width="1.4"/>
+  <line x1="244" y1="240" x2="244" y2="252" stroke="#e06c6c" stroke-width="1.4"/>
+  <text x="88" y="236" font-family="system-ui,sans-serif" font-size="11" fill="#e06c6c">老化筛选窗口 Burn-in</text>
+  <text x="88" y="262" font-family="system-ui,sans-serif" font-size="11" fill="#e06c6c">（例如 125 °C / 48 h）</text>
+
+  <!-- 横轴标注 -->
+  <text x="250" y="290" font-family="system-ui,sans-serif" font-size="11.5" fill="#4a8fd0" text-anchor="middle">筛选目标线</text>
+  <text x="480" y="290" font-family="system-ui,sans-serif" font-size="11.5" fill="#c9a227" text-anchor="middle">耗损起点</text>
+  <text x="744" y="304" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8" text-anchor="end">时间 t（对数刻度）</text>
+
+  <text x="24" y="322" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">注：老化筛选只是把早期失效搬到工厂里发生，它不改变产品本身的失效率；过度老化反而会消耗寿命预算。</text>
+</svg>

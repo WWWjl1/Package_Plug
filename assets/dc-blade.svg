@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="刀轮划片剖面与划片道宽度预算示意">
+  <defs>
+    <linearGradient id="dcSie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <linearGradient id="dcBlade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a227"/>
+      <stop offset="1" stop-color="#8d6f14"/>
+    </linearGradient>
+    <marker id="dcA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">① 刀轮划片剖面（沿划片道方向看）</text>
+  <text x="470" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">② 划片道宽度 DD 的加和来源</text>
+
+  <!-- ① 蓝膜 / DAF -->
+  <rect x="40" y="203" width="400" height="22" fill="#eef2f8" stroke="#9aa7b8" stroke-width="1" stroke-dasharray="5 4"/>
+  <text x="52" y="218" font-family="system-ui,sans-serif" font-size="12" fill="#5a6675">蓝膜 / DAF</text>
+
+  <!-- ① 钝化层 + 硅片本体（中间留出切缝） -->
+  <rect x="40" y="150" width="190" height="7" fill="#cbd6e6" stroke="#8b97a8" stroke-width="1"/>
+  <rect x="244" y="150" width="196" height="7" fill="#cbd6e6" stroke="#8b97a8" stroke-width="1"/>
+  <rect x="40" y="157" width="190" height="46" fill="url(#dcSie)" stroke="#4a5666" stroke-width="1.5"/>
+  <rect x="244" y="157" width="196" height="46" fill="url(#dcSie)" stroke="#4a5666" stroke-width="1.5"/>
+  <text x="268" y="186" font-family="system-ui,sans-serif" font-size="12" fill="#ffffff">器件面 / 有源区</text>
+
+  <!-- ① 崩边（切缝两侧的硅崩落） -->
+  <path d="M230,150 L221,150 L230,159 z" fill="#e06c6c" opacity="0.9"/>
+  <path d="M244,150 L253,150 L244,159 z" fill="#e06c6c" opacity="0.9"/>
+  <path d="M230,203 L223,203 L230,195 z" fill="#e06c6c" opacity="0.9"/>
+  <path d="M244,203 L251,203 L244,195 z" fill="#e06c6c" opacity="0.9"/>
+
+  <!-- ① 刀片（穿过切缝，并切入蓝膜 = 过切） -->
+  <rect x="230" y="26" width="14" height="189" fill="url(#dcBlade)" stroke="#6f5710" stroke-width="1"/>
+  <!-- ① 法兰（夹持刀片） -->
+  <rect x="199" y="42" width="76" height="36" rx="6" fill="#93a1b5" stroke="#6b7788" stroke-width="1.5"/>
+  <text x="237" y="65" font-family="system-ui,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">法兰</text>
+
+  <!-- ① 标注：刀片 -->
+  <text x="20" y="56" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">刀片（金刚石磨粒</text>
+  <text x="20" y="72" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">＋树脂/金属结合剂）</text>
+  <line x1="136" y1="56" x2="226" y2="56" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#dcA)"/>
+
+  <!-- ① 标注：露出量 / 主轴转速 -->
+  <line x1="284" y1="92" x2="250" y2="92" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#dcA)"/>
+  <text x="288" y="96" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">露出量 0.3～1.0 mm</text>
+  <line x1="284" y1="114" x2="250" y2="114" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#dcA)"/>
+  <text x="288" y="118" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">主轴转速 30k～60k rpm</text>
+
+  <!-- ① 标注：正面崩边 / 背面崩边 -->
+  <line x1="190" y1="128" x2="219" y2="148" stroke="#e06c6c" stroke-width="1.2" marker-end="url(#dcA)"/>
+  <text x="186" y="124" font-family="system-ui,sans-serif" font-size="12" fill="#e06c6c" text-anchor="end">正面崩边（chipping）</text>
+  <line x1="182" y1="226" x2="219" y2="205" stroke="#e06c6c" stroke-width="1.2" marker-end="url(#dcA)"/>
+  <text x="178" y="232" font-family="system-ui,sans-serif" font-size="12" fill="#e06c6c" text-anchor="end">背面崩边（更危险）</text>
+
+  <!-- ① 标注：过切 -->
+  <text x="252" y="216" font-family="system-ui,sans-serif" font-size="11.5" fill="#5a6675">过切 10～30 μm</text>
+
+  <!-- ① 底部要点 -->
+  <text x="24" y="250" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">线速度 v = π·D·n / 60（D≈55 mm、n=40000 rpm → v≈116 m/s）</text>
+  <text x="24" y="270" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">单颗磨粒切深 ∝ 进给 /（线速度 × 磨粒密度）</text>
+  <text x="24" y="290" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">必须过切：补偿 TTV 与贴膜起伏，否则扩膜时连片</text>
+
+  <!-- ② 划片道宽度加和条（70 μm → 280 px） -->
+  <text x="750" y="58" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8" text-anchor="end">合计 ≈ 70 μm</text>
+  <rect x="470" y="66" width="20" height="30" fill="#dfe5ee"/>
+  <rect x="490" y="66" width="40" height="30" fill="#e06c6c"/>
+  <rect x="530" y="66" width="20" height="30" fill="#d9a441"/>
+  <rect x="550" y="66" width="120" height="30" fill="url(#dcBlade)"/>
+  <rect x="670" y="66" width="20" height="30" fill="#d9a441"/>
+  <rect x="690" y="66" width="40" height="30" fill="#e06c6c"/>
+  <rect x="730" y="66" width="20" height="30" fill="#dfe5ee"/>
+  <rect x="470" y="66" width="280" height="30" fill="none" stroke="#8b97a8" stroke-width="1"/>
+  <text x="610" y="86" font-family="system-ui,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">刀片 30 μm</text>
+
+  <!-- ② 图例 -->
+  <rect x="470" y="108" width="12" height="12" fill="#dfe5ee" stroke="#8b97a8" stroke-width="0.8"/>
+  <text x="488" y="118" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">安全余量：双侧各 5 μm（覆盖未列出的余项）</text>
+  <rect x="470" y="132" width="12" height="12" fill="#e06c6c" stroke="#8b97a8" stroke-width="0.8"/>
+  <text x="488" y="142" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">崩边：单侧 10 μm，必须被划片道吃掉</text>
+  <rect x="470" y="156" width="12" height="12" fill="#d9a441" stroke="#8b97a8" stroke-width="0.8"/>
+  <text x="488" y="166" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">对准误差：±5 μm（双向，所以要乘 2）</text>
+  <rect x="470" y="180" width="12" height="12" fill="url(#dcBlade)" stroke="#8b97a8" stroke-width="0.8"/>
+  <text x="488" y="190" font-family="system-ui,sans-serif" font-size="11.5" fill="#8b97a8">刀片厚度 30 μm：切缝宽度 kerf，硬占用</text>
+
+  <!-- ② 公式与结论 -->
+  <text x="470" y="216" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">DD ≥ 刀片厚度 + 2×(对准 + 崩边) + 2×余量</text>
+  <text x="470" y="236" font-family="system-ui,sans-serif" font-size="12" fill="#4a8fd0">= 30 + 2×(5+10) + 2×5 = 70 μm</text>
+  <text x="470" y="262" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">刀片厚度减半（40→20 μm）：切缝省一半，</text>
+  <text x="470" y="282" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">但侧向刚度 ∝ t³ 只剩 1/8 → 摆动、偏移、崩边</text>
+</svg>

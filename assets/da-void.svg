@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="装片层空洞与 SAM 检测示意">
+  <defs>
+    <linearGradient id="daSi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <linearGradient id="daGlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbe6f4"/>
+      <stop offset="1" stop-color="#b9c9df"/>
+    </linearGradient>
+    <marker id="daArw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e06c6c"/>
+    </marker>
+    <marker id="daArw2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b97a8"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">① 装片层空洞剖面：热流被迫绕行</text>
+  <text x="430" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">② SAM（C-Scan）灰度图上的空洞分布</text>
+
+  <!-- ① 剖面 -->
+  <text x="24" y="42" font-family="system-ui,sans-serif" font-size="12.5" fill="#e06c6c">热流</text>
+
+  <text x="22" y="74" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">芯片</text>
+  <line x1="62" y1="70" x2="78" y2="70" stroke="#8b97a8" stroke-width="1" marker-end="url(#daArw2)"/>
+  <rect x="80" y="52" width="260" height="40" fill="url(#daSi)" stroke="#4a5666" stroke-width="1.5"/>
+  <text x="210" y="77" font-family="system-ui,sans-serif" font-size="12.5" fill="#fff" text-anchor="middle">硅本体（k ≈ 150 W/(m·K)）</text>
+
+  <text x="22" y="114" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">装片层</text>
+  <line x1="62" y1="110" x2="78" y2="110" stroke="#8b97a8" stroke-width="1" marker-end="url(#daArw2)"/>
+  <rect x="80" y="92" width="260" height="44" fill="url(#daGlue)" stroke="#7f8fa6" stroke-width="1.5"/>
+
+  <text x="22" y="158" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">基板</text>
+  <line x1="62" y1="154" x2="78" y2="154" stroke="#8b97a8" stroke-width="1" marker-end="url(#daArw2)"/>
+  <rect x="80" y="136" width="260" height="38" fill="#4a5666" stroke="#2f3946" stroke-width="1.5"/>
+  <text x="210" y="160" font-family="system-ui,sans-serif" font-size="12.5" fill="#e6ecf5" text-anchor="middle">基板 / 引线框架</text>
+
+  <!-- 空洞 -->
+  <circle cx="140" cy="114" r="12" fill="#ffffff" stroke="#e06c6c" stroke-width="1.6" stroke-dasharray="4 3"/>
+  <text x="140" y="118" font-family="system-ui,sans-serif" font-size="11" fill="#e06c6c" text-anchor="middle">空洞</text>
+
+  <!-- 硅内热流箭 -->
+  <g stroke="#e06c6c" stroke-width="1.6" marker-end="url(#daArw)">
+    <line x1="110" y1="58" x2="110" y2="86"/>
+    <line x1="140" y1="58" x2="140" y2="86"/>
+    <line x1="190" y1="58" x2="190" y2="86"/>
+    <line x1="240" y1="58" x2="240" y2="86"/>
+    <line x1="290" y1="58" x2="290" y2="86"/>
+  </g>
+
+  <!-- 装片层：中间一支被迫绕行 -->
+  <g stroke="#e06c6c" stroke-width="1.6" fill="none">
+    <path d="M140,97 C124,106 120,120 126,131" marker-end="url(#daArw)"/>
+    <path d="M140,97 C156,106 160,120 154,131" marker-end="url(#daArw)"/>
+  </g>
+  <g stroke="#e06c6c" stroke-width="1.6" marker-end="url(#daArw)">
+    <line x1="190" y1="97" x2="190" y2="131"/>
+    <line x1="240" y1="97" x2="240" y2="131"/>
+    <line x1="290" y1="97" x2="290" y2="131"/>
+  </g>
+  <text x="196" y="82" font-family="system-ui,sans-serif" font-size="11.5" fill="#e06c6c">绕行 → 收缩热阻</text>
+
+  <!-- BLT 尺寸线 -->
+  <line x1="352" y1="92" x2="352" y2="136" stroke="#8b97a8" stroke-width="1.2"/>
+  <line x1="346" y1="92" x2="358" y2="92" stroke="#8b97a8" stroke-width="1.2"/>
+  <line x1="346" y1="136" x2="358" y2="136" stroke="#8b97a8" stroke-width="1.2"/>
+  <text x="362" y="110" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">BLT t</text>
+  <text x="362" y="127" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">20~40 μm</text>
+
+  <!-- ② SAM 灰度图 -->
+  <rect x="430" y="48" width="184" height="184" fill="#16202c" stroke="#5d7699" stroke-width="1.5"/>
+  <rect x="478" y="88" width="88" height="96" fill="none" stroke="#e06c6c" stroke-width="1.4" stroke-dasharray="5 4"/>
+  <g fill="#eef3f9" opacity="0.93">
+    <ellipse cx="522" cy="136" rx="26" ry="17"/>
+    <ellipse cx="470" cy="80" rx="10" ry="7"/>
+    <ellipse cx="580" cy="76" rx="13" ry="9"/>
+    <ellipse cx="456" cy="190" rx="9" ry="7"/>
+    <ellipse cx="596" cy="196" rx="15" ry="10"/>
+    <ellipse cx="545" cy="212" rx="7" ry="5"/>
+  </g>
+
+  <text x="628" y="74" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">亮 = 空洞 / 分层</text>
+  <text x="628" y="94" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">暗 = 结合良好</text>
+  <text x="628" y="114" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">（回波弱）</text>
+  <text x="628" y="148" font-family="system-ui,sans-serif" font-size="12" fill="#e06c6c">红框 = 有源区</text>
+  <text x="628" y="168" font-family="system-ui,sans-serif" font-size="12" fill="#e06c6c">（结区）投影</text>
+
+  <!-- 左下：机理与量级 -->
+  <text x="24" y="204" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">空洞就是空气：k ≈ 0.026 W/(m·K)，比银浆低约两个数量级</text>
+  <text x="24" y="226" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">热流被迫绕行 → 除面积损失外还多出一段收缩热阻</text>
+  <text x="24" y="248" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">20% 面积空洞：简单折减 ×1.25，实测常见 ×1.4 ~ 2.0</text>
+  <text x="24" y="270" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">位置比面积更致命：结区正下方的空洞没有替代路径</text>
+  <text x="24" y="292" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">同样面积下，一个大空洞比多个分散小空洞更危险</text>
+
+  <!-- 右下：SAM 判读 -->
+  <text x="430" y="252" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">面积空洞率 v = 空洞面积 / 焊盘面积</text>
+  <text x="430" y="272" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">反射系数 R = (Z₂ − Z₁) / (Z₂ + Z₁)</text>
+  <text x="430" y="292" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">硅 Z ≈ 2×10⁷ Rayl，空气 Z ≈ 415 Rayl</text>
+  <text x="430" y="312" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">→ 界面一脱开就近乎全反射，对比度极高</text>
+</svg>
