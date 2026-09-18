@@ -2,6 +2,12 @@
   "version": 1,
   "note": "知识点库。每个细分点一个全局唯一 id。同一个知识点如果出现在多条线（比如传统封装和先进封装里都有「塑封材料」），就在这里用同一个 id 登记多次，进度自动互通。",
   "points": {
+    "wt.why": { "title": "为什么必须减薄", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["advanced/tsv", "topics/materials"] },
+    "wt.grind": { "title": "磨削减薄：砂轮与参数", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["topics/equipment"] },
+    "wt.stress": { "title": "亚表面损伤与应力释放", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["topics/reliability"] },
+    "wt.methods": { "title": "减薄手段全景：Taiko / DBG / 临时键合", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["traditional/dicing", "advanced/tsv"] },
+    "wt.defects": { "title": "减薄的典型缺陷与失效", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["topics/reliability"] },
+    "wt.metrology": { "title": "厚度与形状指标：TTV / Bow / Warp", "appearsIn": ["traditional/wafer-thinning"], "relatedTo": ["topics/glossary"] },
     "wb.principle": { "title": "键合原理", "appearsIn": ["traditional/wire-bonding"] },
     "wb.materials": { "title": "丝材选择", "appearsIn": ["traditional/wire-bonding"], "relatedTo": ["topics/materials"] },
     "wb.machine": { "title": "键合机与劈刀", "appearsIn": ["traditional/wire-bonding"], "relatedTo": ["topics/equipment"] },

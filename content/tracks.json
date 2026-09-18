@@ -8,7 +8,7 @@
       "title": "传统封装流程",
       "hint": "芯片级：先把晶圆切成一颗颗芯片，再逐颗组装",
       "processes": [
-        { "id": "wafer-thinning", "title": "晶圆减薄", "file": "traditional/01-wafer-thinning.json", "status": "planned" },
+        { "id": "wafer-thinning", "title": "晶圆减薄", "file": "traditional/01-wafer-thinning.json", "status": "ready" },
         { "id": "dicing", "title": "划片", "file": "traditional/02-dicing.json", "status": "planned" },
         { "id": "die-attach", "title": "装片", "file": "traditional/03-die-attach.json", "status": "planned" },
         { "id": "wire-bonding", "title": "引线键合", "file": "traditional/04-wire-bonding.json", "status": "ready" },

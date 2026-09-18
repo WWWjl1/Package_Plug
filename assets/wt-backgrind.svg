@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="100%" role="img" aria-label="晶圆减薄与翘曲示意">
+  <defs>
+    <linearGradient id="sieG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9db3d0"/>
+      <stop offset="1" stop-color="#5d7699"/>
+    </linearGradient>
+    <linearGradient id="wheelG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a227"/>
+      <stop offset="1" stop-color="#8d6f14"/>
+    </linearGradient>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa7b8"/>
+    </marker>
+  </defs>
+
+  <text x="24" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">① 磨削减薄（剖面）</text>
+  <text x="470" y="26" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#8b97a8">② 减薄后的翘曲（Bow / Warp）</text>
+
+  <!-- ① 砂轮 + 晶圆 -->
+  <!-- 砂轮 -->
+  <rect x="60" y="52" width="250" height="46" rx="6" fill="url(#wheelG)" stroke="#6f5710" stroke-width="1.5"/>
+  <text x="185" y="81" font-family="system-ui,sans-serif" font-size="13" fill="#fff" text-anchor="middle">金刚石砂轮（#320 粗磨 / #2000+ 精磨）</text>
+  <!-- 磨屑 -->
+  <g fill="#d9a441">
+    <circle cx="96" cy="106" r="2.4"/><circle cx="120" cy="112" r="2"/><circle cx="148" cy="105" r="2.6"/>
+    <circle cx="182" cy="113" r="2.1"/><circle cx="214" cy="106" r="2.4"/><circle cx="252" cy="112" r="2"/>
+  </g>
+  <!-- 晶圆（已减薄的一侧在上） -->
+  <rect x="42" y="120" width="286" height="26" fill="#cbd6e6" stroke="#8b97a8" stroke-width="1"/>
+  <rect x="42" y="146" width="286" height="40" fill="url(#sieG)" stroke="#4a5666" stroke-width="1.5"/>
+  <rect x="42" y="186" width="286" height="20" fill="#dfe5ee" stroke="#93a1b5" stroke-width="1"/>
+  <text x="185" y="171" font-family="system-ui,sans-serif" font-size="13" fill="#fff" text-anchor="middle">硅片本体（减薄后厚度）</text>
+  <text x="185" y="201" font-family="system-ui,sans-serif" font-size="12.5" fill="#3d4655" text-anchor="middle">器件面 / 凸点面（DEVICE SIDE）</text>
+
+  <!-- 标注 -->
+  <line x1="352" y1="133" x2="404" y2="133" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#a2)"/>
+  <text x="410" y="130" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">亚表面损伤层 SSD</text>
+  <text x="410" y="147" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">（微裂纹 + 残余应力，必须去除）</text>
+
+  <line x1="60" y1="236" x2="120" y2="210" stroke="#9aa7b8" stroke-width="1.2" marker-end="url(#a2)"/>
+  <text x="24" y="250" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">磨削面 = 背面</text>
+  <text x="24" y="267" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">（磨削纹有方向性）</text>
+
+  <!-- 原始厚度示意 -->
+  <line x1="252" y1="100" x2="300" y2="100" stroke="#9aa7b8" stroke-width="1.2" opacity="0"/>
+  <line x1="336" y1="120" x2="336" y2="206" stroke="#e06c6c" stroke-width="1.4" stroke-dasharray="4 3"/>
+  <text x="341" y="236" font-family="system-ui,sans-serif" font-size="12.5" fill="#e06c6c">原始 725μm（8 吋典型）</text>
+
+  <!-- ② 翘曲 -->
+  <!-- 参考平面 -->
+  <line x1="500" y1="120" x2="742" y2="120" stroke="#9aa7b8" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="500" y="112" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">参考平面</text>
+  <!-- 弯曲的薄片 -->
+  <path d="M506,150 C560,116 620,116 700,150" fill="none" stroke="#5d7699" stroke-width="9" stroke-linecap="round"/>
+  <path d="M506,150 C560,116 620,116 700,150" fill="none" stroke="#9db3d0" stroke-width="3" stroke-linecap="round"/>
+  <!-- BOW：中心到参考平面的距离 -->
+  <line x1="603" y1="120" x2="603" y2="133" stroke="#e06c6c" stroke-width="1.4" marker-end="url(#a2)"/>
+  <text x="612" y="132" font-family="system-ui,sans-serif" font-size="12.5" fill="#e06c6c">Bow（中心偏离）</text>
+  <!-- WARP：最高点与最低点之差 -->
+  <line x1="700" y1="104" x2="700" y2="150" stroke="#4a8fd0" stroke-width="1.4"/>
+  <line x1="506" y1="150" x2="706" y2="150" stroke="#4a8fd0" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="612" y="180" font-family="system-ui,sans-serif" font-size="12.5" fill="#4a8fd0">Warp（最高点 − 最低点）</text>
+
+  <text x="500" y="220" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">减薄越薄 → 刚度∝t³ 下降 → 翘曲急剧变大</text>
+  <text x="500" y="240" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">→ 后续划片/装片/堆叠全部变难</text>
+  <text x="500" y="268" font-family="system-ui,sans-serif" font-size="12.5" fill="#8b97a8">对策：Taiko、先切后磨（DBG）、应力释放、临时键合</text>
+
+  <text x="24" y="308" font-family="system-ui,sans-serif" font-size="12" fill="#8b97a8">注：TTV（总厚度偏差）看的是厚度均匀性；Bow / Warp 看的是形状。三者是完全不同的指标，面试常拿来互相混淆。</text>
+</svg>
